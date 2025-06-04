@@ -1,0 +1,1085 @@
+
+        ==================== LOG ENTRY ====================
+        Timestamp       : 2025-05-12 12:48:15
+
+        Problem Statement:
+        Write a C++ program to read a sequence of characters consisting of characters ( and ) and identify if it is VALID or INVALID.Below is the definition of a VALID sequence.   1. The empty sequence (containing 0 symbols) is VALID.   2. If A is a VALID sequence, then so is (A).   3. If A and B are two VALID sequences, then AB (writing them side-by-side) is a valid sequence as well.For example, to see that (()(())) is valid, we note that it is of the form (A) where A is of the form CD, where C is the sequence () and D is the sequence (()); C is valid because if is of the form (E) where E is empty, and D is valid as it is of the form (C).Hint: To check whether a sequence is valid, it is enough to keep track of the count of (s and )s seen at any point in the sequence, when scanning the sequence left to right. You can use a few examples to understand when a sequence becomes invalid.Output: Your output should be of the form VALID N or INVALID N, where N = count of ( - count of )  for the entire sequence.
+
+        Criteria:
+        [
+    {
+        "id": 575,
+        "description": "Input Reading",
+        "is_ai_grading_available": false,
+        "order_criterion": 1,
+        "title": "Criterion 1",
+        "program": 94,
+        "Ratings": [
+            {
+                "id": 1438,
+                "description": "Incorrect",
+                "marks": 0.0,
+                "title": "B",
+                "criteria": 575
+            },
+            {
+                "id": 1437,
+                "description": "Reads the full sequence correctly from cin and handles empty input properly",
+                "marks": 20.0,
+                "title": "A",
+                "criteria": 575
+            }
+        ]
+    }
+]
+
+        Submission IDs  : ['25299']
+        ===================================================
+        
+        ==================== LOG ENTRY ====================
+        Timestamp       : 2025-05-12 12:49:07
+
+        Problem Statement:
+        Write a C++ program to read a sequence of characters consisting of characters ( and ) and identify if it is VALID or INVALID.Below is the definition of a VALID sequence.   1. The empty sequence (containing 0 symbols) is VALID.   2. If A is a VALID sequence, then so is (A).   3. If A and B are two VALID sequences, then AB (writing them side-by-side) is a valid sequence as well.For example, to see that (()(())) is valid, we note that it is of the form (A) where A is of the form CD, where C is the sequence () and D is the sequence (()); C is valid because if is of the form (E) where E is empty, and D is valid as it is of the form (C).Hint: To check whether a sequence is valid, it is enough to keep track of the count of (s and )s seen at any point in the sequence, when scanning the sequence left to right. You can use a few examples to understand when a sequence becomes invalid.Output: Your output should be of the form VALID N or INVALID N, where N = count of ( - count of )  for the entire sequence.
+
+        Criteria:
+        [
+    {
+        "id": 575,
+        "description": "Input Reading",
+        "is_ai_grading_available": false,
+        "order_criterion": 1,
+        "title": "Criterion 1",
+        "program": 94,
+        "Ratings": [
+            {
+                "id": 1438,
+                "description": "Incorrect",
+                "marks": 0.0,
+                "title": "B",
+                "criteria": 575
+            },
+            {
+                "id": 1437,
+                "description": "Reads the full sequence correctly from cin and handles empty input properly",
+                "marks": 20.0,
+                "title": "A",
+                "criteria": 575
+            }
+        ]
+    }
+]
+
+        Submission IDs  : ['25299']
+        ===================================================
+        
+        ==================== LOG ENTRY ====================
+        Timestamp       : 2025-05-12 12:49:29
+
+        Problem Statement:
+        Write a C++ program to read a sequence of characters consisting of characters ( and ) and identify if it is VALID or INVALID.Below is the definition of a VALID sequence.   1. The empty sequence (containing 0 symbols) is VALID.   2. If A is a VALID sequence, then so is (A).   3. If A and B are two VALID sequences, then AB (writing them side-by-side) is a valid sequence as well.For example, to see that (()(())) is valid, we note that it is of the form (A) where A is of the form CD, where C is the sequence () and D is the sequence (()); C is valid because if is of the form (E) where E is empty, and D is valid as it is of the form (C).Hint: To check whether a sequence is valid, it is enough to keep track of the count of (s and )s seen at any point in the sequence, when scanning the sequence left to right. You can use a few examples to understand when a sequence becomes invalid.Output: Your output should be of the form VALID N or INVALID N, where N = count of ( - count of )  for the entire sequence.
+
+        Criteria:
+        [
+    {
+        "id": 575,
+        "description": "Input Reading",
+        "is_ai_grading_available": false,
+        "order_criterion": 1,
+        "title": "Criterion 1",
+        "program": 94,
+        "Ratings": [
+            {
+                "id": 1438,
+                "description": "Incorrect",
+                "marks": 0.0,
+                "title": "B",
+                "criteria": 575
+            },
+            {
+                "id": 1437,
+                "description": "Reads the full sequence correctly from cin and handles empty input properly",
+                "marks": 20.0,
+                "title": "A",
+                "criteria": 575
+            }
+        ]
+    }
+]
+
+        Submission IDs  : ['25299']
+        ===================================================
+        
+        ==================== LOG ENTRY ====================
+        Timestamp       : 2025-05-12 12:50:34
+
+        Problem Statement:
+        Write a C++ program to read a sequence of characters consisting of characters ( and ) and identify if it is VALID or INVALID.Below is the definition of a VALID sequence.   1. The empty sequence (containing 0 symbols) is VALID.   2. If A is a VALID sequence, then so is (A).   3. If A and B are two VALID sequences, then AB (writing them side-by-side) is a valid sequence as well.For example, to see that (()(())) is valid, we note that it is of the form (A) where A is of the form CD, where C is the sequence () and D is the sequence (()); C is valid because if is of the form (E) where E is empty, and D is valid as it is of the form (C).Hint: To check whether a sequence is valid, it is enough to keep track of the count of (s and )s seen at any point in the sequence, when scanning the sequence left to right. You can use a few examples to understand when a sequence becomes invalid.Output: Your output should be of the form VALID N or INVALID N, where N = count of ( - count of )  for the entire sequence.
+
+        Criteria:
+        [
+    {
+        "id": 575,
+        "description": "Input Reading",
+        "is_ai_grading_available": false,
+        "order_criterion": 1,
+        "title": "Criterion 1",
+        "program": 94,
+        "Ratings": [
+            {
+                "id": 1438,
+                "description": "Incorrect",
+                "marks": 0.0,
+                "title": "B",
+                "criteria": 575
+            },
+            {
+                "id": 1437,
+                "description": "Reads the full sequence correctly from cin and handles empty input properly",
+                "marks": 20.0,
+                "title": "A",
+                "criteria": 575
+            }
+        ]
+    }
+]
+
+        Submission IDs  : ['25299']
+        ===================================================
+        
+        ==================== LOG ENTRY ====================
+        Timestamp       : 2025-05-13 06:53:18
+
+        Problem Statement:
+        Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+        Criteria:
+        [
+    {
+        "id": 909,
+        "description": "Output",
+        "is_ai_grading_available": false,
+        "order_criterion": 5,
+        "title": "Criterion 5 ",
+        "program": 149,
+        "Ratings": [
+            {
+                "id": 2292,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 909
+            },
+            {
+                "id": 2291,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 909
+            },
+            {
+                "id": 2290,
+                "description": "Correctly prints the output",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 909
+            }
+        ]
+    },
+    {
+        "id": 908,
+        "description": "Declaration of variables",
+        "is_ai_grading_available": false,
+        "order_criterion": 4,
+        "title": "Criterion 4 ",
+        "program": 149,
+        "Ratings": [
+            {
+                "id": 2289,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 908
+            },
+            {
+                "id": 2288,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 908
+            },
+            {
+                "id": 2287,
+                "description": "correctly declares the two variables as char",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 908
+            }
+        ]
+    },
+    {
+        "id": 907,
+        "description": "Accepting input",
+        "is_ai_grading_available": false,
+        "order_criterion": 3,
+        "title": "Criterion 3 ",
+        "program": 149,
+        "Ratings": [
+            {
+                "id": 2286,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 907
+            },
+            {
+                "id": 2285,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 907
+            },
+            {
+                "id": 2284,
+                "description": "correctly accepts two characters as input",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 907
+            }
+        ]
+    },
+    {
+        "id": 906,
+        "description": "comparing for tie",
+        "is_ai_grading_available": false,
+        "order_criterion": 2,
+        "title": "Criterion 2",
+        "program": 149,
+        "Ratings": [
+            {
+                "id": 2283,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 906
+            },
+            {
+                "id": 2282,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 906
+            },
+            {
+                "id": 2281,
+                "description": "correctly compares if both players have input same response. ",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 906
+            }
+        ]
+    },
+    {
+        "id": 905,
+        "description": "Comparing for player 1 and 2 win",
+        "is_ai_grading_available": false,
+        "order_criterion": 1,
+        "title": "Criterion 1 ",
+        "program": 149,
+        "Ratings": [
+            {
+                "id": 2280,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 905
+            },
+            {
+                "id": 2279,
+                "description": "Some issue. ",
+                "marks": 2.0,
+                "title": "B",
+                "criteria": 905
+            },
+            {
+                "id": 2278,
+                "description": "correctly compares all cases of player 1 winning. ",
+                "marks": 4.0,
+                "title": "A",
+                "criteria": 905
+            }
+        ]
+    }
+]
+
+        Submission IDs  : ['25490']
+        ===================================================
+        
+        ==================== LOG ENTRY ====================
+        Timestamp       : 2025-05-13 06:54:38
+
+        Problem Statement:
+        Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+        Criteria:
+        [
+    {
+        "id": 909,
+        "description": "Output",
+        "is_ai_grading_available": false,
+        "order_criterion": 5,
+        "title": "Criterion 5 ",
+        "program": 149,
+        "Ratings": [
+            {
+                "id": 2292,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 909
+            },
+            {
+                "id": 2291,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 909
+            },
+            {
+                "id": 2290,
+                "description": "Correctly prints the output",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 909
+            }
+        ]
+    },
+    {
+        "id": 908,
+        "description": "Declaration of variables",
+        "is_ai_grading_available": false,
+        "order_criterion": 4,
+        "title": "Criterion 4 ",
+        "program": 149,
+        "Ratings": [
+            {
+                "id": 2289,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 908
+            },
+            {
+                "id": 2288,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 908
+            },
+            {
+                "id": 2287,
+                "description": "correctly declares the two variables as char",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 908
+            }
+        ]
+    },
+    {
+        "id": 907,
+        "description": "Accepting input",
+        "is_ai_grading_available": false,
+        "order_criterion": 3,
+        "title": "Criterion 3 ",
+        "program": 149,
+        "Ratings": [
+            {
+                "id": 2286,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 907
+            },
+            {
+                "id": 2285,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 907
+            },
+            {
+                "id": 2284,
+                "description": "correctly accepts two characters as input",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 907
+            }
+        ]
+    },
+    {
+        "id": 906,
+        "description": "comparing for tie",
+        "is_ai_grading_available": false,
+        "order_criterion": 2,
+        "title": "Criterion 2",
+        "program": 149,
+        "Ratings": [
+            {
+                "id": 2283,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 906
+            },
+            {
+                "id": 2282,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 906
+            },
+            {
+                "id": 2281,
+                "description": "correctly compares if both players have input same response. ",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 906
+            }
+        ]
+    },
+    {
+        "id": 905,
+        "description": "Comparing for player 1 and 2 win",
+        "is_ai_grading_available": false,
+        "order_criterion": 1,
+        "title": "Criterion 1 ",
+        "program": 149,
+        "Ratings": [
+            {
+                "id": 2280,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 905
+            },
+            {
+                "id": 2279,
+                "description": "Some issue. ",
+                "marks": 2.0,
+                "title": "B",
+                "criteria": 905
+            },
+            {
+                "id": 2278,
+                "description": "correctly compares all cases of player 1 winning. ",
+                "marks": 4.0,
+                "title": "A",
+                "criteria": 905
+            }
+        ]
+    }
+]
+
+        Submission IDs  : ['25490']
+        ===================================================
+        
+        ==================== LOG ENTRY ====================
+        Timestamp       : 2025-05-13 08:04:17
+
+        Problem Statement:
+        Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+        Criteria:
+        [
+    {
+        "id": 909,
+        "description": "Output",
+        "is_ai_grading_available": false,
+        "order_criterion": 5,
+        "title": "Criterion 5 ",
+        "program": 149,
+        "Ratings": [
+            {
+                "id": 2292,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 909
+            },
+            {
+                "id": 2291,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 909
+            },
+            {
+                "id": 2290,
+                "description": "Correctly prints the output",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 909
+            }
+        ]
+    },
+    {
+        "id": 908,
+        "description": "Declaration of variables",
+        "is_ai_grading_available": false,
+        "order_criterion": 4,
+        "title": "Criterion 4 ",
+        "program": 149,
+        "Ratings": [
+            {
+                "id": 2289,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 908
+            },
+            {
+                "id": 2288,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 908
+            },
+            {
+                "id": 2287,
+                "description": "correctly declares the two variables as char",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 908
+            }
+        ]
+    },
+    {
+        "id": 907,
+        "description": "Accepting input",
+        "is_ai_grading_available": false,
+        "order_criterion": 3,
+        "title": "Criterion 3 ",
+        "program": 149,
+        "Ratings": [
+            {
+                "id": 2286,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 907
+            },
+            {
+                "id": 2285,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 907
+            },
+            {
+                "id": 2284,
+                "description": "correctly accepts two characters as input",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 907
+            }
+        ]
+    },
+    {
+        "id": 906,
+        "description": "comparing for tie",
+        "is_ai_grading_available": false,
+        "order_criterion": 2,
+        "title": "Criterion 2",
+        "program": 149,
+        "Ratings": [
+            {
+                "id": 2283,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 906
+            },
+            {
+                "id": 2282,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 906
+            },
+            {
+                "id": 2281,
+                "description": "correctly compares if both players have input same response. ",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 906
+            }
+        ]
+    },
+    {
+        "id": 905,
+        "description": "Comparing for player 1 and 2 win",
+        "is_ai_grading_available": false,
+        "order_criterion": 1,
+        "title": "Criterion 1 ",
+        "program": 149,
+        "Ratings": [
+            {
+                "id": 2280,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 905
+            },
+            {
+                "id": 2279,
+                "description": "Some issue. ",
+                "marks": 2.0,
+                "title": "B",
+                "criteria": 905
+            },
+            {
+                "id": 2278,
+                "description": "correctly compares all cases of player 1 winning. ",
+                "marks": 4.0,
+                "title": "A",
+                "criteria": 905
+            }
+        ]
+    }
+]
+
+        Submission IDs  : ['25490']
+        ===================================================
+        
+        ==================== LOG ENTRY ====================
+        Timestamp       : 2025-05-13 08:09:08
+
+        Problem Statement:
+        Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+        Criteria:
+        [
+    {
+        "id": 909,
+        "description": "Output",
+        "is_ai_grading_available": false,
+        "order_criterion": 5,
+        "title": "Criterion 5 ",
+        "program": 149,
+        "Ratings": [
+            {
+                "id": 2292,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 909
+            },
+            {
+                "id": 2291,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 909
+            },
+            {
+                "id": 2290,
+                "description": "Correctly prints the output",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 909
+            }
+        ]
+    },
+    {
+        "id": 908,
+        "description": "Declaration of variables",
+        "is_ai_grading_available": false,
+        "order_criterion": 4,
+        "title": "Criterion 4 ",
+        "program": 149,
+        "Ratings": [
+            {
+                "id": 2289,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 908
+            },
+            {
+                "id": 2288,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 908
+            },
+            {
+                "id": 2287,
+                "description": "correctly declares the two variables as char",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 908
+            }
+        ]
+    },
+    {
+        "id": 907,
+        "description": "Accepting input",
+        "is_ai_grading_available": false,
+        "order_criterion": 3,
+        "title": "Criterion 3 ",
+        "program": 149,
+        "Ratings": [
+            {
+                "id": 2286,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 907
+            },
+            {
+                "id": 2285,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 907
+            },
+            {
+                "id": 2284,
+                "description": "correctly accepts two characters as input",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 907
+            }
+        ]
+    },
+    {
+        "id": 906,
+        "description": "comparing for tie",
+        "is_ai_grading_available": false,
+        "order_criterion": 2,
+        "title": "Criterion 2",
+        "program": 149,
+        "Ratings": [
+            {
+                "id": 2283,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 906
+            },
+            {
+                "id": 2282,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 906
+            },
+            {
+                "id": 2281,
+                "description": "correctly compares if both players have input same response. ",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 906
+            }
+        ]
+    },
+    {
+        "id": 905,
+        "description": "Comparing for player 1 and 2 win",
+        "is_ai_grading_available": false,
+        "order_criterion": 1,
+        "title": "Criterion 1 ",
+        "program": 149,
+        "Ratings": [
+            {
+                "id": 2280,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 905
+            },
+            {
+                "id": 2279,
+                "description": "Some issue. ",
+                "marks": 2.0,
+                "title": "B",
+                "criteria": 905
+            },
+            {
+                "id": 2278,
+                "description": "correctly compares all cases of player 1 winning. ",
+                "marks": 4.0,
+                "title": "A",
+                "criteria": 905
+            }
+        ]
+    }
+]
+
+        Submission IDs  : ['25490']
+        ===================================================
+        
+        ==================== LOG ENTRY ====================
+        Timestamp       : 2025-06-03 18:21:50
+
+        Problem Statement:
+        4.cpp       (14 Marks)Write a C++ program that accepts an integer N from the user and finds all the prime factors of N.Input Format:The input consists of one value: NOutput Format:Print all the prime factors of N from smallest to largest, each in the same line separated by a space.Constraints (Assume)2 <= N <= 10^6Note: Do not write any C++ statements for printing general messages. For example, the following should NOT be present in your program:cout << "Enter a number:",cout << "The computed answer is", etc. In addition, do not print unnecessary spaces unless specified in the program. You just have to print the numbers.Practice Test Cases (3):InputOutput1002 516913542 3
+
+
+        Criteria:
+        [
+    {
+        "id": 237,
+        "description": "Divisibility by odd numbers is checked and number reduced",
+        "is_ai_grading_available": false,
+        "title": "Criterion 2",
+        "program": 60,
+        "Ratings": [
+            {
+                "id": 389,
+                "description": "Totally wrong",
+                "marks": 0.0,
+                "title": "D",
+                "criteria": 237
+            },
+            {
+                "id": 388,
+                "description": "Tried in somewhat right direction",
+                "marks": 1.0,
+                "title": "C",
+                "criteria": 237
+            },
+            {
+                "id": 387,
+                "description": "Almost correct",
+                "marks": 2.0,
+                "title": "B",
+                "criteria": 237
+            },
+            {
+                "id": 386,
+                "description": "Fully correct",
+                "marks": 3.0,
+                "title": "A",
+                "criteria": 237
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "description": "Divisibility by k=2 is checked and number reduced",
+        "is_ai_grading_available": false,
+        "title": "Criterion 1",
+        "program": 60,
+        "Ratings": [
+            {
+                "id": 332,
+                "description": "Totally wrong",
+                "marks": 0.0,
+                "title": "D",
+                "criteria": 6
+            },
+            {
+                "id": 331,
+                "description": "Tried in somewhat right direction",
+                "marks": 1.0,
+                "title": "C",
+                "criteria": 6
+            },
+            {
+                "id": 17,
+                "description": "Almost correct",
+                "marks": 2.0,
+                "title": "B",
+                "criteria": 6
+            },
+            {
+                "id": 16,
+                "description": "Fully correct",
+                "marks": 3.0,
+                "title": "A",
+                "criteria": 6
+            }
+        ]
+    }
+]
+
+        Submission IDs  : ['2410']
+        ===================================================
+        
+        ==================== LOG ENTRY ====================
+        Timestamp       : 2025-06-03 18:30:58
+
+        Problem Statement:
+        4.cpp       (14 Marks)Write a C++ program that accepts an integer N from the user and finds all the prime factors of N.Input Format:The input consists of one value: NOutput Format:Print all the prime factors of N from smallest to largest, each in the same line separated by a space.Constraints (Assume)2 <= N <= 10^6Note: Do not write any C++ statements for printing general messages. For example, the following should NOT be present in your program:cout << "Enter a number:",cout << "The computed answer is", etc. In addition, do not print unnecessary spaces unless specified in the program. You just have to print the numbers.Practice Test Cases (3):InputOutput1002 516913542 3
+
+
+        Criteria:
+        [
+    {
+        "id": 237,
+        "description": "Divisibility by odd numbers is checked and number reduced",
+        "is_ai_grading_available": false,
+        "title": "Criterion 2",
+        "program": 60,
+        "Ratings": [
+            {
+                "id": 389,
+                "description": "Totally wrong",
+                "marks": 0.0,
+                "title": "D",
+                "criteria": 237
+            },
+            {
+                "id": 388,
+                "description": "Tried in somewhat right direction",
+                "marks": 1.0,
+                "title": "C",
+                "criteria": 237
+            },
+            {
+                "id": 387,
+                "description": "Almost correct",
+                "marks": 2.0,
+                "title": "B",
+                "criteria": 237
+            },
+            {
+                "id": 386,
+                "description": "Fully correct",
+                "marks": 3.0,
+                "title": "A",
+                "criteria": 237
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "description": "Divisibility by k=2 is checked and number reduced",
+        "is_ai_grading_available": false,
+        "title": "Criterion 1",
+        "program": 60,
+        "Ratings": [
+            {
+                "id": 332,
+                "description": "Totally wrong",
+                "marks": 0.0,
+                "title": "D",
+                "criteria": 6
+            },
+            {
+                "id": 331,
+                "description": "Tried in somewhat right direction",
+                "marks": 1.0,
+                "title": "C",
+                "criteria": 6
+            },
+            {
+                "id": 17,
+                "description": "Almost correct",
+                "marks": 2.0,
+                "title": "B",
+                "criteria": 6
+            },
+            {
+                "id": 16,
+                "description": "Fully correct",
+                "marks": 3.0,
+                "title": "A",
+                "criteria": 6
+            }
+        ]
+    }
+]
+
+        Submission IDs  : ['2410']
+        ===================================================
+        
+        ==================== LOG ENTRY ====================
+        Timestamp       : 2025-06-04 18:08:14
+
+        Problem Statement:
+        4.cpp       (14 Marks)Write a C++ program that accepts an integer N from the user and finds all the prime factors of N.Input Format:The input consists of one value: NOutput Format:Print all the prime factors of N from smallest to largest, each in the same line separated by a space.Constraints (Assume)2 <= N <= 10^6Note: Do not write any C++ statements for printing general messages. For example, the following should NOT be present in your program:cout << "Enter a number:",cout << "The computed answer is", etc. In addition, do not print unnecessary spaces unless specified in the program. You just have to print the numbers.Practice Test Cases (3):InputOutput1002 516913542 3
+
+
+        Criteria:
+        [
+    {
+        "id": 237,
+        "description": "Divisibility by odd numbers is checked and number reduced",
+        "is_ai_grading_available": false,
+        "title": "Criterion 2",
+        "program": 60,
+        "Ratings": [
+            {
+                "id": 389,
+                "description": "Totally wrong",
+                "marks": 0.0,
+                "title": "D",
+                "criteria": 237
+            },
+            {
+                "id": 388,
+                "description": "Tried in somewhat right direction",
+                "marks": 1.0,
+                "title": "C",
+                "criteria": 237
+            },
+            {
+                "id": 387,
+                "description": "Almost correct",
+                "marks": 2.0,
+                "title": "B",
+                "criteria": 237
+            },
+            {
+                "id": 386,
+                "description": "Fully correct",
+                "marks": 3.0,
+                "title": "A",
+                "criteria": 237
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "description": "Divisibility by k=2 is checked and number reduced",
+        "is_ai_grading_available": false,
+        "title": "Criterion 1",
+        "program": 60,
+        "Ratings": [
+            {
+                "id": 332,
+                "description": "Totally wrong",
+                "marks": 0.0,
+                "title": "D",
+                "criteria": 6
+            },
+            {
+                "id": 331,
+                "description": "Tried in somewhat right direction",
+                "marks": 1.0,
+                "title": "C",
+                "criteria": 6
+            },
+            {
+                "id": 17,
+                "description": "Almost correct",
+                "marks": 2.0,
+                "title": "B",
+                "criteria": 6
+            },
+            {
+                "id": 16,
+                "description": "Fully correct",
+                "marks": 3.0,
+                "title": "A",
+                "criteria": 6
+            }
+        ]
+    }
+]
+
+        Submission IDs  : ['2410']
+        ===================================================
+        

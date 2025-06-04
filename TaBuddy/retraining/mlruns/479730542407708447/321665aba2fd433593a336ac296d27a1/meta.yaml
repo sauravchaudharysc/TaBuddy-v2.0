@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/479730542407708447/321665aba2fd433593a336ac296d27a1/artifacts
+end_time: 1748888863598
+entry_point_name: ''
+experiment_id: '479730542407708447'
+lifecycle_stage: active
+run_id: 321665aba2fd433593a336ac296d27a1
+run_name: DPO_Run_20250602_235644
+run_uuid: 321665aba2fd433593a336ac296d27a1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748888804220
+status: 3
+tags: []
+user_id: nagakalyani

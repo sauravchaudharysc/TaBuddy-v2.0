@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Autograding Server - TaBuddy Deployment Guide</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 30px;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        pre {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #ecf0f1;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .section {
+            margin-top: 40px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        code {
+            background: #eee;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to AI Autograding Server</h1>
+        <p>Revolutionizing the way assignments are graded with the power of AI.</p>
+        <p>Fast, Accurate, and Reliable.</p>
+
+        <div class="section">
+            <h2>TaBuddy Deployment Guide</h2>
+            <h3>Project Structure</h3>
+            <pre>Saurav/
+├── docker-compose.yml     # Docker config
+├── Dockerfile             # Build instructions
+├── models/                # Model directory
+├── requirements.txt       # Python deps
+└── TaBuddy/               # Django project</pre>
+
+            <h3>Quick Start</h3>
+            <h4>1. Build Docker Image</h4>
+            <pre>docker build -t tabuddy_image .</pre>
+
+            <h4>2. Launch Services</h4>
+            <pre>docker-compose up</pre>
+
+            <h3>Services</h3>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                    <th>Port</th>
+                </tr>
+                <tr><td>web</td><td>Django app server</td><td>8002</td></tr>
+                <tr><td>celery</td><td>Celery worker (GPU-enabled)</td><td>—</td></tr>
+                <tr><td>mongodb</td><td>MongoDB database</td><td>27017</td></tr>
+                <tr><td>mongo-express</td><td>Web UI for MongoDB</td><td>8081</td></tr>
+                <tr><td>redis</td><td>Redis message broker</td><td>6379</td></tr>
+                <tr><td>flower</td><td>Celery dashboard</td><td>5556</td></tr>
+            </table>
+
+            <h3>Environment Variables (via docker-compose.yml)</h3>
+            <ul>
+                <li><code>MODEL_DIRECTORY_PATH</code> = /TaBuddy/models/CodeLlama</li>
+                <li><code>ADAPTER_PATH</code> = /TaBuddy/adapters/CodeLlama/final_checkpoint</li>
+                <li><code>DEVICE</code> = cuda:0</li>
+                <li><code>LOG_DIR</code> = /TaBuddy/logs</li>
+            </ul>
+
+            <h3>Requirements</h3>
+            <ul>
+                <li>Docker: <a href="https://docs.docker.com/get-docker/" target="_blank">Install Docker</a></li>
+                <li>Docker Compose: <a href="https://docs.docker.com/compose/install/" target="_blank">Install Compose</a></li>
+                <li>NVIDIA Container Toolkit: <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html" target="_blank">Install Toolkit</a></li>
+            </ul>
+
+            <h3>Access Points</h3>
+            <ul>
+                <li>Web App: <a href="http://localhost:8002" target="_blank">http://localhost:8002</a></li>
+                <li>Mongo Express: <a href="http://localhost:8081" target="_blank">http://localhost:8081</a> (login required)</li>
+                <li>Celery Flower Dashboard: <a href="http://localhost:5556" target="_blank">http://localhost:5556</a> (no authentication)</li>
+            </ul>
+
+            <h3>Login Credentials</h3>
+            <ul>
+                <li><strong>Mongo Express</strong>
+                    <ul>
+                        <li>Username: <code>admin</code></li>
+                        <li>Password: <code>pass</code></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Clean Up</h3>
+            <h4>Stop and remove all services</h4>
+            <pre>docker-compose down</pre>
+
+            <h4>Remove the image</h4>
+            <pre>docker rmi tabuddy_image</pre>
+        </div>
+    </div>
+</body>
+</html>

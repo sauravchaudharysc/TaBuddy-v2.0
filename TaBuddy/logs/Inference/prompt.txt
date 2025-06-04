@@ -1,0 +1,518 @@
+### Context : 
+Write a C++ program to read a sequence of characters consisting of characters ( and ) and identify if it is VALID or INVALID.Below is the definition of a VALID sequence.   1. The empty sequence (containing 0 symbols) is VALID.   2. If A is a VALID sequence, then so is (A).   3. If A and B are two VALID sequences, then AB (writing them side-by-side) is a valid sequence as well.For example, to see that (()(())) is valid, we note that it is of the form (A) where A is of the form CD, where C is the sequence () and D is the sequence (()); C is valid because if is of the form (E) where E is empty, and D is valid as it is of the form (C).Hint: To check whether a sequence is valid, it is enough to keep track of the count of (s and )s seen at any point in the sequence, when scanning the sequence left to right. You can use a few examples to understand when a sequence becomes invalid.Output: Your output should be of the form VALID N or INVALID N, where N = count of ( - count of )  for the entire sequence.
+
+### Code : 
+b'#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n    string sequence;\n    cin >> sequence;\n\n    int balance = 0;  // Tracks the difference between \'(\' and \')\'\n    bool isValid = true;\n\n    for (char ch : sequence) {\n        if (ch == \'(\') {\n            balance++;\n        } else if (ch == \')\') {\n            balance--;\n        } else {\n            // Ignore other characters if any\n            continue;\n        }\n\n        // If at any point balance is negative, it\'s invalid\n        if (balance < 0) {\n            isValid = false;\n            break;\n        }\n    }\n\n    // Final validity check: balance must be 0\n    if (balance != 0) {\n        isValid = false;\n    }\n\n    if (isValid) {\n        cout << "VALID " << balance << endl;\n    } else {\n        cout << "INVALID " << balance << endl;\n    }\n\n    return 0;\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Input Reading". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. Reads the full sequence correctly from cin and handles empty input properly
+B. Incorrect
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to read a sequence of characters consisting of characters ( and ) and identify if it is VALID or INVALID.Below is the definition of a VALID sequence.   1. The empty sequence (containing 0 symbols) is VALID.   2. If A is a VALID sequence, then so is (A).   3. If A and B are two VALID sequences, then AB (writing them side-by-side) is a valid sequence as well.For example, to see that (()(())) is valid, we note that it is of the form (A) where A is of the form CD, where C is the sequence () and D is the sequence (()); C is valid because if is of the form (E) where E is empty, and D is valid as it is of the form (C).Hint: To check whether a sequence is valid, it is enough to keep track of the count of (s and )s seen at any point in the sequence, when scanning the sequence left to right. You can use a few examples to understand when a sequence becomes invalid.Output: Your output should be of the form VALID N or INVALID N, where N = count of ( - count of )  for the entire sequence.
+
+### Code : 
+b'#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n    string sequence;\n    cin >> sequence;\n\n    int balance = 0;  // Tracks the difference between \'(\' and \')\'\n    bool isValid = true;\n\n    for (char ch : sequence) {\n        if (ch == \'(\') {\n            balance++;\n        } else if (ch == \')\') {\n            balance--;\n        } else {\n            // Ignore other characters if any\n            continue;\n        }\n\n        // If at any point balance is negative, it\'s invalid\n        if (balance < 0) {\n            isValid = false;\n            break;\n        }\n    }\n\n    // Final validity check: balance must be 0\n    if (balance != 0) {\n        isValid = false;\n    }\n\n    if (isValid) {\n        cout << "VALID " << balance << endl;\n    } else {\n        cout << "INVALID " << balance << endl;\n    }\n\n    return 0;\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Input Reading". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. Reads the full sequence correctly from cin and handles empty input properly
+B. Incorrect
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to read a sequence of characters consisting of characters ( and ) and identify if it is VALID or INVALID.Below is the definition of a VALID sequence.   1. The empty sequence (containing 0 symbols) is VALID.   2. If A is a VALID sequence, then so is (A).   3. If A and B are two VALID sequences, then AB (writing them side-by-side) is a valid sequence as well.For example, to see that (()(())) is valid, we note that it is of the form (A) where A is of the form CD, where C is the sequence () and D is the sequence (()); C is valid because if is of the form (E) where E is empty, and D is valid as it is of the form (C).Hint: To check whether a sequence is valid, it is enough to keep track of the count of (s and )s seen at any point in the sequence, when scanning the sequence left to right. You can use a few examples to understand when a sequence becomes invalid.Output: Your output should be of the form VALID N or INVALID N, where N = count of ( - count of )  for the entire sequence.
+
+### Code : 
+b'#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n    string sequence;\n    cin >> sequence;\n\n    int balance = 0;  // Tracks the difference between \'(\' and \')\'\n    bool isValid = true;\n\n    for (char ch : sequence) {\n        if (ch == \'(\') {\n            balance++;\n        } else if (ch == \')\') {\n            balance--;\n        } else {\n            // Ignore other characters if any\n            continue;\n        }\n\n        // If at any point balance is negative, it\'s invalid\n        if (balance < 0) {\n            isValid = false;\n            break;\n        }\n    }\n\n    // Final validity check: balance must be 0\n    if (balance != 0) {\n        isValid = false;\n    }\n\n    if (isValid) {\n        cout << "VALID " << balance << endl;\n    } else {\n        cout << "INVALID " << balance << endl;\n    }\n\n    return 0;\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Input Reading". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. Reads the full sequence correctly from cin and handles empty input properly
+B. Incorrect
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to read a sequence of characters consisting of characters ( and ) and identify if it is VALID or INVALID.Below is the definition of a VALID sequence.   1. The empty sequence (containing 0 symbols) is VALID.   2. If A is a VALID sequence, then so is (A).   3. If A and B are two VALID sequences, then AB (writing them side-by-side) is a valid sequence as well.For example, to see that (()(())) is valid, we note that it is of the form (A) where A is of the form CD, where C is the sequence () and D is the sequence (()); C is valid because if is of the form (E) where E is empty, and D is valid as it is of the form (C).Hint: To check whether a sequence is valid, it is enough to keep track of the count of (s and )s seen at any point in the sequence, when scanning the sequence left to right. You can use a few examples to understand when a sequence becomes invalid.Output: Your output should be of the form VALID N or INVALID N, where N = count of ( - count of )  for the entire sequence.
+
+### Code : 
+b'#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n    string sequence;\n    cin >> sequence;\n\n    int balance = 0;  // Tracks the difference between \'(\' and \')\'\n    bool isValid = true;\n\n    for (char ch : sequence) {\n        if (ch == \'(\') {\n            balance++;\n        } else if (ch == \')\') {\n            balance--;\n        } else {\n            // Ignore other characters if any\n            continue;\n        }\n\n        // If at any point balance is negative, it\'s invalid\n        if (balance < 0) {\n            isValid = false;\n            break;\n        }\n    }\n\n    // Final validity check: balance must be 0\n    if (balance != 0) {\n        isValid = false;\n    }\n\n    if (isValid) {\n        cout << "VALID " << balance << endl;\n    } else {\n        cout << "INVALID " << balance << endl;\n    }\n\n    return 0;\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Input Reading". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. Reads the full sequence correctly from cin and handles empty input properly
+B. Incorrect
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+### Code : 
+b'#include<simplecpp>\nmain_program\n{\n    char c1,c2;\n    cin>>c1>>c2;\n    if(c1==c2)\n    cout<<"T"<<endl;\n    else if(((c1==\'r\')&&(c2==\'p\'))||((c1==\'p\')&&(c2==\'s\'))||((c1==\'s\')&&(c2==\'r\')))\n    cout<<"2";\n    else\n    cout<<"1";\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Output". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. Correctly prints the output
+B. Some issue. 
+C. Major issue. 
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+### Code : 
+b'#include<simplecpp>\nmain_program\n{\n    char c1,c2;\n    cin>>c1>>c2;\n    if(c1==c2)\n    cout<<"T"<<endl;\n    else if(((c1==\'r\')&&(c2==\'p\'))||((c1==\'p\')&&(c2==\'s\'))||((c1==\'s\')&&(c2==\'r\')))\n    cout<<"2";\n    else\n    cout<<"1";\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Declaration of variables". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. correctly declares the two variables as char
+B. Some issue. 
+C. Major issue. 
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+### Code : 
+b'#include<simplecpp>\nmain_program\n{\n    char c1,c2;\n    cin>>c1>>c2;\n    if(c1==c2)\n    cout<<"T"<<endl;\n    else if(((c1==\'r\')&&(c2==\'p\'))||((c1==\'p\')&&(c2==\'s\'))||((c1==\'s\')&&(c2==\'r\')))\n    cout<<"2";\n    else\n    cout<<"1";\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Accepting input". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. correctly accepts two characters as input
+B. Some issue. 
+C. Major issue. 
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+### Code : 
+b'#include<simplecpp>\nmain_program\n{\n    char c1,c2;\n    cin>>c1>>c2;\n    if(c1==c2)\n    cout<<"T"<<endl;\n    else if(((c1==\'r\')&&(c2==\'p\'))||((c1==\'p\')&&(c2==\'s\'))||((c1==\'s\')&&(c2==\'r\')))\n    cout<<"2";\n    else\n    cout<<"1";\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "comparing for tie". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. correctly compares if both players have input same response. 
+B. Some issue. 
+C. Major issue. 
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+### Code : 
+b'#include<simplecpp>\nmain_program\n{\n    char c1,c2;\n    cin>>c1>>c2;\n    if(c1==c2)\n    cout<<"T"<<endl;\n    else if(((c1==\'r\')&&(c2==\'p\'))||((c1==\'p\')&&(c2==\'s\'))||((c1==\'s\')&&(c2==\'r\')))\n    cout<<"2";\n    else\n    cout<<"1";\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Comparing for player 1 and 2 win". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. correctly compares all cases of player 1 winning. 
+B. Some issue. 
+C. Major issue. 
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+### Code : 
+b'#include<simplecpp>\nmain_program\n{\n    char c1,c2;\n    cin>>c1>>c2;\n    if(c1==c2)\n    cout<<"T"<<endl;\n    else if(((c1==\'r\')&&(c2==\'p\'))||((c1==\'p\')&&(c2==\'s\'))||((c1==\'s\')&&(c2==\'r\')))\n    cout<<"2";\n    else\n    cout<<"1";\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Output". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. Correctly prints the output
+B. Some issue. 
+C. Major issue. 
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+### Code : 
+b'#include<simplecpp>\nmain_program\n{\n    char c1,c2;\n    cin>>c1>>c2;\n    if(c1==c2)\n    cout<<"T"<<endl;\n    else if(((c1==\'r\')&&(c2==\'p\'))||((c1==\'p\')&&(c2==\'s\'))||((c1==\'s\')&&(c2==\'r\')))\n    cout<<"2";\n    else\n    cout<<"1";\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Declaration of variables". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. correctly declares the two variables as char
+B. Some issue. 
+C. Major issue. 
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+### Code : 
+b'#include<simplecpp>\nmain_program\n{\n    char c1,c2;\n    cin>>c1>>c2;\n    if(c1==c2)\n    cout<<"T"<<endl;\n    else if(((c1==\'r\')&&(c2==\'p\'))||((c1==\'p\')&&(c2==\'s\'))||((c1==\'s\')&&(c2==\'r\')))\n    cout<<"2";\n    else\n    cout<<"1";\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Accepting input". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. correctly accepts two characters as input
+B. Some issue. 
+C. Major issue. 
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+### Code : 
+b'#include<simplecpp>\nmain_program\n{\n    char c1,c2;\n    cin>>c1>>c2;\n    if(c1==c2)\n    cout<<"T"<<endl;\n    else if(((c1==\'r\')&&(c2==\'p\'))||((c1==\'p\')&&(c2==\'s\'))||((c1==\'s\')&&(c2==\'r\')))\n    cout<<"2";\n    else\n    cout<<"1";\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "comparing for tie". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. correctly compares if both players have input same response. 
+B. Some issue. 
+C. Major issue. 
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+### Code : 
+b'#include<simplecpp>\nmain_program\n{\n    char c1,c2;\n    cin>>c1>>c2;\n    if(c1==c2)\n    cout<<"T"<<endl;\n    else if(((c1==\'r\')&&(c2==\'p\'))||((c1==\'p\')&&(c2==\'s\'))||((c1==\'s\')&&(c2==\'r\')))\n    cout<<"2";\n    else\n    cout<<"1";\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Comparing for player 1 and 2 win". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. correctly compares all cases of player 1 winning. 
+B. Some issue. 
+C. Major issue. 
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+### Code : 
+b'#include<simplecpp>\nmain_program\n{\n    char c1,c2;\n    cin>>c1>>c2;\n    if(c1==c2)\n    cout<<"T"<<endl;\n    else if(((c1==\'r\')&&(c2==\'p\'))||((c1==\'p\')&&(c2==\'s\'))||((c1==\'s\')&&(c2==\'r\')))\n    cout<<"2";\n    else\n    cout<<"1";\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Output". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. Correctly prints the output
+B. Some issue. 
+C. Major issue. 
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+### Code : 
+b'#include<simplecpp>\nmain_program\n{\n    char c1,c2;\n    cin>>c1>>c2;\n    if(c1==c2)\n    cout<<"T"<<endl;\n    else if(((c1==\'r\')&&(c2==\'p\'))||((c1==\'p\')&&(c2==\'s\'))||((c1==\'s\')&&(c2==\'r\')))\n    cout<<"2";\n    else\n    cout<<"1";\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Declaration of variables". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. correctly declares the two variables as char
+B. Some issue. 
+C. Major issue. 
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+### Code : 
+b'#include<simplecpp>\nmain_program\n{\n    char c1,c2;\n    cin>>c1>>c2;\n    if(c1==c2)\n    cout<<"T"<<endl;\n    else if(((c1==\'r\')&&(c2==\'p\'))||((c1==\'p\')&&(c2==\'s\'))||((c1==\'s\')&&(c2==\'r\')))\n    cout<<"2";\n    else\n    cout<<"1";\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Accepting input". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. correctly accepts two characters as input
+B. Some issue. 
+C. Major issue. 
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+### Code : 
+b'#include<simplecpp>\nmain_program\n{\n    char c1,c2;\n    cin>>c1>>c2;\n    if(c1==c2)\n    cout<<"T"<<endl;\n    else if(((c1==\'r\')&&(c2==\'p\'))||((c1==\'p\')&&(c2==\'s\'))||((c1==\'s\')&&(c2==\'r\')))\n    cout<<"2";\n    else\n    cout<<"1";\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "comparing for tie". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. correctly compares if both players have input same response. 
+B. Some issue. 
+C. Major issue. 
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+### Code : 
+b'#include<simplecpp>\nmain_program\n{\n    char c1,c2;\n    cin>>c1>>c2;\n    if(c1==c2)\n    cout<<"T"<<endl;\n    else if(((c1==\'r\')&&(c2==\'p\'))||((c1==\'p\')&&(c2==\'s\'))||((c1==\'s\')&&(c2==\'r\')))\n    cout<<"2";\n    else\n    cout<<"1";\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Comparing for player 1 and 2 win". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. correctly compares all cases of player 1 winning. 
+B. Some issue. 
+C. Major issue. 
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+### Code : 
+b'#include<simplecpp>\nmain_program\n{\n    char c1,c2;\n    cin>>c1>>c2;\n    if(c1==c2)\n    cout<<"T"<<endl;\n    else if(((c1==\'r\')&&(c2==\'p\'))||((c1==\'p\')&&(c2==\'s\'))||((c1==\'s\')&&(c2==\'r\')))\n    cout<<"2";\n    else\n    cout<<"1";\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Output". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. Correctly prints the output
+B. Some issue. 
+C. Major issue. 
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+### Code : 
+b'#include<simplecpp>\nmain_program\n{\n    char c1,c2;\n    cin>>c1>>c2;\n    if(c1==c2)\n    cout<<"T"<<endl;\n    else if(((c1==\'r\')&&(c2==\'p\'))||((c1==\'p\')&&(c2==\'s\'))||((c1==\'s\')&&(c2==\'r\')))\n    cout<<"2";\n    else\n    cout<<"1";\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Declaration of variables". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. correctly declares the two variables as char
+B. Some issue. 
+C. Major issue. 
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+### Code : 
+b'#include<simplecpp>\nmain_program\n{\n    char c1,c2;\n    cin>>c1>>c2;\n    if(c1==c2)\n    cout<<"T"<<endl;\n    else if(((c1==\'r\')&&(c2==\'p\'))||((c1==\'p\')&&(c2==\'s\'))||((c1==\'s\')&&(c2==\'r\')))\n    cout<<"2";\n    else\n    cout<<"1";\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Accepting input". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. correctly accepts two characters as input
+B. Some issue. 
+C. Major issue. 
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+### Code : 
+b'#include<simplecpp>\nmain_program\n{\n    char c1,c2;\n    cin>>c1>>c2;\n    if(c1==c2)\n    cout<<"T"<<endl;\n    else if(((c1==\'r\')&&(c2==\'p\'))||((c1==\'p\')&&(c2==\'s\'))||((c1==\'s\')&&(c2==\'r\')))\n    cout<<"2";\n    else\n    cout<<"1";\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "comparing for tie". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. correctly compares if both players have input same response. 
+B. Some issue. 
+C. Major issue. 
+
+### Response : The required output in json format is :
+
+
+### Context : 
+Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
+
+### Code : 
+b'#include<simplecpp>\nmain_program\n{\n    char c1,c2;\n    cin>>c1>>c2;\n    if(c1==c2)\n    cout<<"T"<<endl;\n    else if(((c1==\'r\')&&(c2==\'p\'))||((c1==\'p\')&&(c2==\'s\'))||((c1==\'s\')&&(c2==\'r\')))\n    cout<<"2";\n    else\n    cout<<"1";\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Comparing for player 1 and 2 win". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. correctly compares all cases of player 1 winning. 
+B. Some issue. 
+C. Major issue. 
+
+### Response : The required output in json format is :
+
+
+### Context : 
+4.cpp       (14 Marks)Write a C++ program that accepts an integer N from the user and finds all the prime factors of N.Input Format:The input consists of one value: NOutput Format:Print all the prime factors of N from smallest to largest, each in the same line separated by a space.Constraints (Assume)2 <= N <= 10^6Note: Do not write any C++ statements for printing general messages. For example, the following should NOT be present in your program:cout << "Enter a number:",cout << "The computed answer is", etc. In addition, do not print unnecessary spaces unless specified in the program. You just have to print the numbers.Practice Test Cases (3):InputOutput1002 516913542 3
+
+
+### Code : 
+b'#include<bits/stdc++.h>\nusing namespace std;\n\nclass DisjointSet{\n    public:\n        vector<int> parent, rank, size;\n\n        DisjointSet(int n){\n            rank.resize(n+1, 0);\n            size.resize(n+1,1);\n            parent.resize(n+1);\n            for(int i=0;i<=n;i++){\n                parent[i] = i;\n            }\n        }\n        int findPar(int u){\n            if(u==parent[u]){\n                return u;\n            }\n            return parent[u] = findPar(parent[u]);\n        }\n        void UnionByRank(int u, int v){\n            int ultp_u = findPar(u);\n            int ultp_v = findPar(v);\n            if(ultp_u == ultp_v)\n                return ;\n            if(rank[ultp_u]<rank[ultp_v]){\n                parent[ultp_u] = ultp_v;\n            }\n            else if(rank[ultp_v]<rank[ultp_u]){\n                parent[ultp_v] = ultp_u;\n            }\n            else{\n                parent[ultp_v] = ultp_u;\n                rank[ultp_u]++;\n            }\n        }\n        void UnionBySize(int u, int v){\n            int ultp_u = findPar(u);\n            int ultp_v = findPar(v);\n            if(ultp_u == ultp_v)\n                return ;\n            if(size[ultp_u]<size[ultp_v]){\n                size[ultp_v] += size[ultp_v];\n                parent[ultp_u] = ultp_v;\n            }\n            else{\n                parent[ultp_v] = ultp_u;\n                size[ultp_u] += size[ultp_v];\n            }\n        }\n};\n\nint main(){\n    DisjointSet d(7);\n    d.UnionBySize(1,2);\n    d.UnionBySize(2,3);\n    d.UnionBySize(4,5);\n    d.UnionBySize(6,7);\n    d.UnionBySize(5,6);\n    if(d.findPar(1)==d.findPar(7)){\n        cout<<"1 and 7 belong to same compoenent."<<endl;\n    }\n    else{\n        cout<<"1 and 7 does not belong to same compoenent."<<endl;\n    }\n    d.UnionBySize(3,7);\n    if(d.findPar(1)==d.findPar(7)){\n        cout<<"1 and 7 belong to same compoenent."<<endl;\n    }\n    else{\n        cout<<"1 and 7 does not belong to same compoenent."<<endl;\n    }\n\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Divisibility by odd numbers is checked and number reduced". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. Fully correct
+B. Almost correct
+C. Tried in somewhat right direction
+D. Totally wrong
+
+### Response : The required output in json format is :
+
+
+### Context : 
+4.cpp       (14 Marks)Write a C++ program that accepts an integer N from the user and finds all the prime factors of N.Input Format:The input consists of one value: NOutput Format:Print all the prime factors of N from smallest to largest, each in the same line separated by a space.Constraints (Assume)2 <= N <= 10^6Note: Do not write any C++ statements for printing general messages. For example, the following should NOT be present in your program:cout << "Enter a number:",cout << "The computed answer is", etc. In addition, do not print unnecessary spaces unless specified in the program. You just have to print the numbers.Practice Test Cases (3):InputOutput1002 516913542 3
+
+
+### Code : 
+b'#include<bits/stdc++.h>\nusing namespace std;\n\nclass DisjointSet{\n    public:\n        vector<int> parent, rank, size;\n\n        DisjointSet(int n){\n            rank.resize(n+1, 0);\n            size.resize(n+1,1);\n            parent.resize(n+1);\n            for(int i=0;i<=n;i++){\n                parent[i] = i;\n            }\n        }\n        int findPar(int u){\n            if(u==parent[u]){\n                return u;\n            }\n            return parent[u] = findPar(parent[u]);\n        }\n        void UnionByRank(int u, int v){\n            int ultp_u = findPar(u);\n            int ultp_v = findPar(v);\n            if(ultp_u == ultp_v)\n                return ;\n            if(rank[ultp_u]<rank[ultp_v]){\n                parent[ultp_u] = ultp_v;\n            }\n            else if(rank[ultp_v]<rank[ultp_u]){\n                parent[ultp_v] = ultp_u;\n            }\n            else{\n                parent[ultp_v] = ultp_u;\n                rank[ultp_u]++;\n            }\n        }\n        void UnionBySize(int u, int v){\n            int ultp_u = findPar(u);\n            int ultp_v = findPar(v);\n            if(ultp_u == ultp_v)\n                return ;\n            if(size[ultp_u]<size[ultp_v]){\n                size[ultp_v] += size[ultp_v];\n                parent[ultp_u] = ultp_v;\n            }\n            else{\n                parent[ultp_v] = ultp_u;\n                size[ultp_u] += size[ultp_v];\n            }\n        }\n};\n\nint main(){\n    DisjointSet d(7);\n    d.UnionBySize(1,2);\n    d.UnionBySize(2,3);\n    d.UnionBySize(4,5);\n    d.UnionBySize(6,7);\n    d.UnionBySize(5,6);\n    if(d.findPar(1)==d.findPar(7)){\n        cout<<"1 and 7 belong to same compoenent."<<endl;\n    }\n    else{\n        cout<<"1 and 7 does not belong to same compoenent."<<endl;\n    }\n    d.UnionBySize(3,7);\n    if(d.findPar(1)==d.findPar(7)){\n        cout<<"1 and 7 belong to same compoenent."<<endl;\n    }\n    else{\n        cout<<"1 and 7 does not belong to same compoenent."<<endl;\n    }\n\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Divisibility by k=2 is checked and number reduced". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. Fully correct
+B. Almost correct
+C. Tried in somewhat right direction
+D. Totally wrong
+
+### Response : The required output in json format is :
+
+
+### Context : 
+4.cpp       (14 Marks)Write a C++ program that accepts an integer N from the user and finds all the prime factors of N.Input Format:The input consists of one value: NOutput Format:Print all the prime factors of N from smallest to largest, each in the same line separated by a space.Constraints (Assume)2 <= N <= 10^6Note: Do not write any C++ statements for printing general messages. For example, the following should NOT be present in your program:cout << "Enter a number:",cout << "The computed answer is", etc. In addition, do not print unnecessary spaces unless specified in the program. You just have to print the numbers.Practice Test Cases (3):InputOutput1002 516913542 3
+
+
+### Code : 
+b'#include<bits/stdc++.h>\nusing namespace std;\n\nclass DisjointSet{\n    public:\n        vector<int> parent, rank, size;\n\n        DisjointSet(int n){\n            rank.resize(n+1, 0);\n            size.resize(n+1,1);\n            parent.resize(n+1);\n            for(int i=0;i<=n;i++){\n                parent[i] = i;\n            }\n        }\n        int findPar(int u){\n            if(u==parent[u]){\n                return u;\n            }\n            return parent[u] = findPar(parent[u]);\n        }\n        void UnionByRank(int u, int v){\n            int ultp_u = findPar(u);\n            int ultp_v = findPar(v);\n            if(ultp_u == ultp_v)\n                return ;\n            if(rank[ultp_u]<rank[ultp_v]){\n                parent[ultp_u] = ultp_v;\n            }\n            else if(rank[ultp_v]<rank[ultp_u]){\n                parent[ultp_v] = ultp_u;\n            }\n            else{\n                parent[ultp_v] = ultp_u;\n                rank[ultp_u]++;\n            }\n        }\n        void UnionBySize(int u, int v){\n            int ultp_u = findPar(u);\n            int ultp_v = findPar(v);\n            if(ultp_u == ultp_v)\n                return ;\n            if(size[ultp_u]<size[ultp_v]){\n                size[ultp_v] += size[ultp_v];\n                parent[ultp_u] = ultp_v;\n            }\n            else{\n                parent[ultp_v] = ultp_u;\n                size[ultp_u] += size[ultp_v];\n            }\n        }\n};\n\nint main(){\n    DisjointSet d(7);\n    d.UnionBySize(1,2);\n    d.UnionBySize(2,3);\n    d.UnionBySize(4,5);\n    d.UnionBySize(6,7);\n    d.UnionBySize(5,6);\n    if(d.findPar(1)==d.findPar(7)){\n        cout<<"1 and 7 belong to same compoenent."<<endl;\n    }\n    else{\n        cout<<"1 and 7 does not belong to same compoenent."<<endl;\n    }\n    d.UnionBySize(3,7);\n    if(d.findPar(1)==d.findPar(7)){\n        cout<<"1 and 7 belong to same compoenent."<<endl;\n    }\n    else{\n        cout<<"1 and 7 does not belong to same compoenent."<<endl;\n    }\n\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Divisibility by odd numbers is checked and number reduced". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. Fully correct
+B. Almost correct
+C. Tried in somewhat right direction
+D. Totally wrong
+
+### Response : The required output in json format is :
+
+
+### Context : 
+4.cpp       (14 Marks)Write a C++ program that accepts an integer N from the user and finds all the prime factors of N.Input Format:The input consists of one value: NOutput Format:Print all the prime factors of N from smallest to largest, each in the same line separated by a space.Constraints (Assume)2 <= N <= 10^6Note: Do not write any C++ statements for printing general messages. For example, the following should NOT be present in your program:cout << "Enter a number:",cout << "The computed answer is", etc. In addition, do not print unnecessary spaces unless specified in the program. You just have to print the numbers.Practice Test Cases (3):InputOutput1002 516913542 3
+
+
+### Code : 
+b'#include<bits/stdc++.h>\nusing namespace std;\n\nclass DisjointSet{\n    public:\n        vector<int> parent, rank, size;\n\n        DisjointSet(int n){\n            rank.resize(n+1, 0);\n            size.resize(n+1,1);\n            parent.resize(n+1);\n            for(int i=0;i<=n;i++){\n                parent[i] = i;\n            }\n        }\n        int findPar(int u){\n            if(u==parent[u]){\n                return u;\n            }\n            return parent[u] = findPar(parent[u]);\n        }\n        void UnionByRank(int u, int v){\n            int ultp_u = findPar(u);\n            int ultp_v = findPar(v);\n            if(ultp_u == ultp_v)\n                return ;\n            if(rank[ultp_u]<rank[ultp_v]){\n                parent[ultp_u] = ultp_v;\n            }\n            else if(rank[ultp_v]<rank[ultp_u]){\n                parent[ultp_v] = ultp_u;\n            }\n            else{\n                parent[ultp_v] = ultp_u;\n                rank[ultp_u]++;\n            }\n        }\n        void UnionBySize(int u, int v){\n            int ultp_u = findPar(u);\n            int ultp_v = findPar(v);\n            if(ultp_u == ultp_v)\n                return ;\n            if(size[ultp_u]<size[ultp_v]){\n                size[ultp_v] += size[ultp_v];\n                parent[ultp_u] = ultp_v;\n            }\n            else{\n                parent[ultp_v] = ultp_u;\n                size[ultp_u] += size[ultp_v];\n            }\n        }\n};\n\nint main(){\n    DisjointSet d(7);\n    d.UnionBySize(1,2);\n    d.UnionBySize(2,3);\n    d.UnionBySize(4,5);\n    d.UnionBySize(6,7);\n    d.UnionBySize(5,6);\n    if(d.findPar(1)==d.findPar(7)){\n        cout<<"1 and 7 belong to same compoenent."<<endl;\n    }\n    else{\n        cout<<"1 and 7 does not belong to same compoenent."<<endl;\n    }\n    d.UnionBySize(3,7);\n    if(d.findPar(1)==d.findPar(7)){\n        cout<<"1 and 7 belong to same compoenent."<<endl;\n    }\n    else{\n        cout<<"1 and 7 does not belong to same compoenent."<<endl;\n    }\n\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Divisibility by k=2 is checked and number reduced". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. Fully correct
+B. Almost correct
+C. Tried in somewhat right direction
+D. Totally wrong
+
+### Response : The required output in json format is :
+
+
+### Context : 
+4.cpp       (14 Marks)Write a C++ program that accepts an integer N from the user and finds all the prime factors of N.Input Format:The input consists of one value: NOutput Format:Print all the prime factors of N from smallest to largest, each in the same line separated by a space.Constraints (Assume)2 <= N <= 10^6Note: Do not write any C++ statements for printing general messages. For example, the following should NOT be present in your program:cout << "Enter a number:",cout << "The computed answer is", etc. In addition, do not print unnecessary spaces unless specified in the program. You just have to print the numbers.Practice Test Cases (3):InputOutput1002 516913542 3
+
+
+### Code : 
+b'#include<bits/stdc++.h>\nusing namespace std;\n\nclass DisjointSet{\n    public:\n        vector<int> parent, rank, size;\n\n        DisjointSet(int n){\n            rank.resize(n+1, 0);\n            size.resize(n+1,1);\n            parent.resize(n+1);\n            for(int i=0;i<=n;i++){\n                parent[i] = i;\n            }\n        }\n        int findPar(int u){\n            if(u==parent[u]){\n                return u;\n            }\n            return parent[u] = findPar(parent[u]);\n        }\n        void UnionByRank(int u, int v){\n            int ultp_u = findPar(u);\n            int ultp_v = findPar(v);\n            if(ultp_u == ultp_v)\n                return ;\n            if(rank[ultp_u]<rank[ultp_v]){\n                parent[ultp_u] = ultp_v;\n            }\n            else if(rank[ultp_v]<rank[ultp_u]){\n                parent[ultp_v] = ultp_u;\n            }\n            else{\n                parent[ultp_v] = ultp_u;\n                rank[ultp_u]++;\n            }\n        }\n        void UnionBySize(int u, int v){\n            int ultp_u = findPar(u);\n            int ultp_v = findPar(v);\n            if(ultp_u == ultp_v)\n                return ;\n            if(size[ultp_u]<size[ultp_v]){\n                size[ultp_v] += size[ultp_v];\n                parent[ultp_u] = ultp_v;\n            }\n            else{\n                parent[ultp_v] = ultp_u;\n                size[ultp_u] += size[ultp_v];\n            }\n        }\n};\n\nint main(){\n    DisjointSet d(7);\n    d.UnionBySize(1,2);\n    d.UnionBySize(2,3);\n    d.UnionBySize(4,5);\n    d.UnionBySize(6,7);\n    d.UnionBySize(5,6);\n    if(d.findPar(1)==d.findPar(7)){\n        cout<<"1 and 7 belong to same compoenent."<<endl;\n    }\n    else{\n        cout<<"1 and 7 does not belong to same compoenent."<<endl;\n    }\n    d.UnionBySize(3,7);\n    if(d.findPar(1)==d.findPar(7)){\n        cout<<"1 and 7 belong to same compoenent."<<endl;\n    }\n    else{\n        cout<<"1 and 7 does not belong to same compoenent."<<endl;\n    }\n\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Divisibility by odd numbers is checked and number reduced". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. Fully correct
+B. Almost correct
+C. Tried in somewhat right direction
+D. Totally wrong
+
+### Response : The required output in json format is :
+
+
+### Context : 
+4.cpp       (14 Marks)Write a C++ program that accepts an integer N from the user and finds all the prime factors of N.Input Format:The input consists of one value: NOutput Format:Print all the prime factors of N from smallest to largest, each in the same line separated by a space.Constraints (Assume)2 <= N <= 10^6Note: Do not write any C++ statements for printing general messages. For example, the following should NOT be present in your program:cout << "Enter a number:",cout << "The computed answer is", etc. In addition, do not print unnecessary spaces unless specified in the program. You just have to print the numbers.Practice Test Cases (3):InputOutput1002 516913542 3
+
+
+### Code : 
+b'#include<bits/stdc++.h>\nusing namespace std;\n\nclass DisjointSet{\n    public:\n        vector<int> parent, rank, size;\n\n        DisjointSet(int n){\n            rank.resize(n+1, 0);\n            size.resize(n+1,1);\n            parent.resize(n+1);\n            for(int i=0;i<=n;i++){\n                parent[i] = i;\n            }\n        }\n        int findPar(int u){\n            if(u==parent[u]){\n                return u;\n            }\n            return parent[u] = findPar(parent[u]);\n        }\n        void UnionByRank(int u, int v){\n            int ultp_u = findPar(u);\n            int ultp_v = findPar(v);\n            if(ultp_u == ultp_v)\n                return ;\n            if(rank[ultp_u]<rank[ultp_v]){\n                parent[ultp_u] = ultp_v;\n            }\n            else if(rank[ultp_v]<rank[ultp_u]){\n                parent[ultp_v] = ultp_u;\n            }\n            else{\n                parent[ultp_v] = ultp_u;\n                rank[ultp_u]++;\n            }\n        }\n        void UnionBySize(int u, int v){\n            int ultp_u = findPar(u);\n            int ultp_v = findPar(v);\n            if(ultp_u == ultp_v)\n                return ;\n            if(size[ultp_u]<size[ultp_v]){\n                size[ultp_v] += size[ultp_v];\n                parent[ultp_u] = ultp_v;\n            }\n            else{\n                parent[ultp_v] = ultp_u;\n                size[ultp_u] += size[ultp_v];\n            }\n        }\n};\n\nint main(){\n    DisjointSet d(7);\n    d.UnionBySize(1,2);\n    d.UnionBySize(2,3);\n    d.UnionBySize(4,5);\n    d.UnionBySize(6,7);\n    d.UnionBySize(5,6);\n    if(d.findPar(1)==d.findPar(7)){\n        cout<<"1 and 7 belong to same compoenent."<<endl;\n    }\n    else{\n        cout<<"1 and 7 does not belong to same compoenent."<<endl;\n    }\n    d.UnionBySize(3,7);\n    if(d.findPar(1)==d.findPar(7)){\n        cout<<"1 and 7 belong to same compoenent."<<endl;\n    }\n    else{\n        cout<<"1 and 7 does not belong to same compoenent."<<endl;\n    }\n\n}'
+
+### Task :
+Choose the option which is most suitable for the above code for the criterion "Divisibility by k=2 is checked and number reduced". Give your output as a json with two fields : "answer" and "reasoning". Do not output anything else. Strictly follow this output format.
+
+### Options :
+A. Fully correct
+B. Almost correct
+C. Tried in somewhat right direction
+D. Totally wrong
+
+### Response : The required output in json format is :
+
+

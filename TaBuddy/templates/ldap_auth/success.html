@@ -1,0 +1,69 @@
+{% extends 'ldap_auth/base.html' %}
+{% block pagestyle %}
+<style type="text/css">
+  body {
+    background-color: #DADADA;
+  }
+
+  body > .grid {
+    height: 100%;
+  }
+
+  .image {
+    margin-top: -100px;
+  }
+
+  #centerbox {
+    max-width: 35rem;
+    margin-top: 5rem;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="ui main text center aligned grid">
+  <div id="centerbox" class="column">
+    <div class="ui large form">
+      <!-- Current Model Status Block -->
+      <div style="background:#E9E6DF;color: rgba(0,0,0,.87);" class="ui stacked segment">
+        <h2 class="ui text center aligned dividing header">Current Model Status <i id="fetch-status" id="fetch-status" class="sync icon link" title="Fetch latest status" style="font-size: 0.8em; vertical-align: text-top;"></i></h2>
+        <div class="field" style="text-align:left">
+          <label>Model Name:</label>
+          <div class="field">
+            {{ model.name }}
+          </div>
+        </div>
+
+        <div class="field" style="text-align:left">
+          <label>Model Parameters:</label>
+          <div class="field">
+            {{ model.parameters }}
+          </div>
+        </div>
+
+        <div class="field" style="text-align:left">
+          <label>Trained On:</label>
+          <div class="field">
+            {{ model.trained_on }}
+          </div>
+        </div>
+
+        
+      </div>
+
+      <!-- Retraining Block -->
+      <div style="background:#E9E6DF;color: rgba(0,0,0,.87);" class="ui stacked segment">
+        <h2 class="ui text center aligned dividing header">Initiate ReTraining</h2>
+        <form method="post" action="#">
+          {% csrf_token %}
+          <button type="submit" class="ui fluid large orange button">
+            Trigger Retraining
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

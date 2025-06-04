@@ -1,0 +1,219 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TaBuddy: AI Grading Assistant</title>
+  <link rel="icon" type="image/png" href="{% static 'images/Icon.png' %}">
+  {%block pagestyle%}
+  {% endblock %}
+  <link rel="stylesheet" type="text/css" href="{% static 'semantic.min.css' %}">
+  <style>
+
+    .ui.main.grid{
+      margin-top: 5rem;
+      padding: 4rem;
+      height: 94vh;
+    }
+
+    .ui.secondary.menu .active.item {
+      background: rgba(0, 0, 255, .15);
+      color: rgba(0, 0, 0, .95);
+      border-radius: .28571429rem;
+    }
+
+    #top-bar {
+      background-color: #222;
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+
+    #department-bar {
+      background-color: #E9E6DF;
+      height: auto;
+    }
+
+    #page-heading{
+      font-size: 31px;
+      font-family: comfortaaregular, Ubuntu, Lato;
+      margin-top: 1rem;
+    }
+
+    #auxiliary-menu {
+      margin-top: 15em;
+    }
+
+    .noshadow {
+      box-shadow: 0 0 0 0 !important;
+      -webkit-box-shadow: 0 0 0 0 !important;
+    }
+
+    .remove-margin {
+      margin: 0 0 0 0 !important;
+    }
+
+    .remove-bottom {
+      padding-bottom: 0 !important;
+    }
+
+    .remove-top {
+      padding-top: 0.5em !important;
+    }
+
+    .single {
+      color: darkorange;
+      font-size: 40px;
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .full-width {
+      width: 100%;
+    }
+
+    .top-divider-margin{
+      margin: 1rem 0 0 0 !important;
+      -webkit-margin: 1rem 0 0 0 !important;
+    }
+
+    @media (min-width:992px) {
+      .desktop-only {
+        display: block !important;
+      }
+
+      .mobile-only {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .mobile-only {
+        display: block !important;
+      }
+
+      .desktop-only {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  {% block navbar %}
+  <div id="top-bar" class="ui fixed inverted menu" style="z-index:9999;">
+    <div class="header item">
+      <img src="{% static 'images/iitb-dj.png' %}"></img>
+    </div>
+    <div class="right menu">
+      <a class="header item" style="color:white;" href="#">
+        Contact Us
+      </a>
+      <a href="http://www.cse.iitb.ac.in" class="item">
+        <img src="{% static 'images/logo.png' %}"></img>
+      </a>
+    </div>
+  </div>
+
+  <div id="department-bar" class="ui fixed menu" style="z-index:999; margin-top: 2.85714286em">
+    <div class="ui celled grid noshadow remove-margin">
+      <div class="row noshadow">
+        <div class="right aligned three wide column noshadow remove-margin remove-bottom">
+        </div>
+        <div class="center aligned ten wide column noshadow remove-margin remove-bottom">
+          <h2 id="page-heading">TaBuddy : AI Grading Assistant</h2>
+        </div>
+        <div class="three wide column noshadow remove-margin remove-bottom">
+          <img>
+        </div>
+      </div>
+
+      <div class="ui divider full-width top-divider-margin"></div>
+
+      <div class="ui secondary menu full-width">
+        {% if request.user.is_authenticated %}
+          <div>
+            <a  class="active item" 
+            href="#">
+            <i class="info icon"></i> Reports
+            </a>
+          </div>
+          <div>
+            <a  class="item" 
+            href="#">
+            <i class="table icon"></i> Datasets
+            </a>
+          </div>
+          <div>  
+            <a class="item" href="#">
+                <i class="clipboard list icon"></i> Experiment Tracker
+            </a>
+          </div>
+          <div>  
+            <a class="item" href="#">
+                <i class="cogs icon"></i> Registered Models
+            </a>
+          </div>  
+          <div class="right menu">
+
+            <div class="ui dropdown item">
+              <i class="user link icon"></i>
+              {{request.user.first_name}}
+
+              <div class="menu">
+            	
+                
+                <a class="item" href="https://bugs.cse.iitb.ac.in/">
+              <i class="bug icon"></i>File a Bug!
+            </a>
+                <a href="{% url 'logout' %}" class="item">Logout</a>
+
+              </div>
+            </div>
+          </div>  
+        </div>
+
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+
+  {% block content %}
+  {% endblock %}
+
+  <div class="ui inverted vertical footer segment">
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="column">
+          <h4 class="ui inverted header">© 2025 EvalPro | TABuddy Team</h4>
+          <div class="ui stackable three column grid">
+            <div class="column">
+              <p> <a href="https://www.cse.iitb.ac.in/~saurav/">Saurav Chaudhary</a> 
+            </div>
+            <div class="column">
+              <a href="https://www.cse.iitb.ac.in/~kalyani/"> Naga Kalyani Goda </a></p>
+            </div>
+            <div class="column">
+              <a href="https://www.cse.iitb.ac.in/~varsha/"> Prof. Varsha Apte </a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script src="{% static 'jquery-3.1.1.min.js' %}"></script>
+<script src="{% static 'semantic.min.js' %}"></script>
+<script>
+  $('.ui.dropdown')
+    .dropdown();
+
+  {% block script %}
+  {% endblock %}
+</script>
+
+</html>
