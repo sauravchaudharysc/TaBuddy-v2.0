@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'inference',
     'deposit_data',
     'ldap_auth',
+    'retraining',
 ]
 
 MIDDLEWARE = [
@@ -85,8 +86,8 @@ DATABASES = {
         'NAME': 'deposit_data',
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
-            # 'host': 'localhost',
-            'host': 'mongodb', #localhost works for host machine, but inside Docker network, services must use their service names .
+            'host': 'localhost',
+            # 'host': 'mongodb', #localhost works for host machine, but inside Docker network, services must use their service names .
             'port': 27017,
             'username': 'root',
             'password': 'example',
@@ -164,7 +165,7 @@ CELERY_TIMEZONE ='Asia/Kolkata'
 # MODEL_DIRECTORY_PATH = os.getenv("MODEL_DIRECTORY_PATH","/raid/ganesh/nagakalyani/Downloads/CodeLlama-7b-Instruct-hf")
 # ADAPTER_PATH = os.getenv("ADAPTER_PATH", os.path.join(BASE_DIR, "adapters","CodeLlama","final_checkpoint"))
 
-MODEL_DIRECTORY_PATH = os.getenv("MODEL_DIRECTORY_PATH", "/TaBuddy/models/CodeLlama")
+MODEL_DIRECTORY_PATH = os.getenv("MODEL_DIRECTORY_PATH", "/raid/ganesh/nagakalyani/Downloads/CodeLlama-7b-Instruct-hf")
 
 # Ensure the adapter path is also correctly mapped inside the container
 ADAPTER_PATH = os.getenv("ADAPTER_PATH", os.path.join(BASE_DIR, "adapters", "CodeLlama", "final_checkpoint"))

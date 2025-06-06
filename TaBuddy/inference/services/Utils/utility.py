@@ -191,7 +191,7 @@ def create_zero_shot_prompts (context, codes, task, options) :
 
         zero_shot_prompts[student_id] = create_zero_shot_prompt(context, student_code, task, options)
        
-        with open(file_path, "a") as f:
+        with open(file_path, "a",  encoding="utf-8") as f:
             f.write(zero_shot_prompts[student_id] + "\n\n\n")  
 
 

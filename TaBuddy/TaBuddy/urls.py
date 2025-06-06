@@ -22,5 +22,6 @@ urlpatterns = [
     path('',home,name='home'),
     path('', include('inference.urls')),
     path('',include('deposit_data.urls')),
+    path('', include('retraining.urls')),
     path('auth/', include('ldap_auth.urls')),
 ]

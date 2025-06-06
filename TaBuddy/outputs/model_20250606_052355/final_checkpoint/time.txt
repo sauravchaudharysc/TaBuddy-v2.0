@@ -1,0 +1,2 @@
+Data loading time: 1.32 seconds
+Training time: 8.86 seconds

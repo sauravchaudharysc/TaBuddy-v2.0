@@ -1,1085 +1,1264 @@
 
         ==================== LOG ENTRY ====================
-        Timestamp       : 2025-05-12 12:48:15
+        Timestamp       : 2025-06-05 12:04:31
 
         Problem Statement:
-        Write a C++ program to read a sequence of characters consisting of characters ( and ) and identify if it is VALID or INVALID.Below is the definition of a VALID sequence.   1. The empty sequence (containing 0 symbols) is VALID.   2. If A is a VALID sequence, then so is (A).   3. If A and B are two VALID sequences, then AB (writing them side-by-side) is a valid sequence as well.For example, to see that (()(())) is valid, we note that it is of the form (A) where A is of the form CD, where C is the sequence () and D is the sequence (()); C is valid because if is of the form (E) where E is empty, and D is valid as it is of the form (C).Hint: To check whether a sequence is valid, it is enough to keep track of the count of (s and )s seen at any point in the sequence, when scanning the sequence left to right. You can use a few examples to understand when a sequence becomes invalid.Output: Your output should be of the form VALID N or INVALID N, where N = count of ( - count of )  for the entire sequence.
+        Problem StatementWrite a C++ program that takes two decimal numbers as input and prints them each separated by a single space.Input FormatTwo decimal numbers each separated by a single space Output FormatTwo decimal numbers each separated by a single spaceAssumptions on InputThe inputs given by the user will be from -100.0 to 100.0, both inclusive. NoteDo not write any C++ statements for printing general messages. For example, the following should NOT be present in your program:cout << "Enter a number:", cout << "The computed answer is", etc. cout should be used to print only the computed final output. In addition, do not print unnecessary spaces unless specified in the program. If any hard coding is found, or if any test case passes by merely writing a cout statement and without any logic, then the marks for that test case will NOT be awarded.
 
         Criteria:
         [
     {
-        "id": 575,
-        "description": "Input Reading",
+        "id": 62,
+        "description": "Inclusion of  Header File",
         "is_ai_grading_available": false,
-        "order_criterion": 1,
+        "order_criterion": 0,
         "title": "Criterion 1",
-        "program": 94,
+        "program": 83,
         "Ratings": [
             {
-                "id": 1438,
-                "description": "Incorrect",
-                "marks": 0.0,
-                "title": "B",
-                "criteria": 575
-            },
-            {
-                "id": 1437,
-                "description": "Reads the full sequence correctly from cin and handles empty input properly",
-                "marks": 20.0,
+                "id": 184,
+                "description": "correctly includes the header file",
+                "marks": 1.0,
                 "title": "A",
-                "criteria": 575
-            }
-        ]
-    }
-]
-
-        Submission IDs  : ['25299']
-        ===================================================
-        
-        ==================== LOG ENTRY ====================
-        Timestamp       : 2025-05-12 12:49:07
-
-        Problem Statement:
-        Write a C++ program to read a sequence of characters consisting of characters ( and ) and identify if it is VALID or INVALID.Below is the definition of a VALID sequence.   1. The empty sequence (containing 0 symbols) is VALID.   2. If A is a VALID sequence, then so is (A).   3. If A and B are two VALID sequences, then AB (writing them side-by-side) is a valid sequence as well.For example, to see that (()(())) is valid, we note that it is of the form (A) where A is of the form CD, where C is the sequence () and D is the sequence (()); C is valid because if is of the form (E) where E is empty, and D is valid as it is of the form (C).Hint: To check whether a sequence is valid, it is enough to keep track of the count of (s and )s seen at any point in the sequence, when scanning the sequence left to right. You can use a few examples to understand when a sequence becomes invalid.Output: Your output should be of the form VALID N or INVALID N, where N = count of ( - count of )  for the entire sequence.
-
-        Criteria:
-        [
-    {
-        "id": 575,
-        "description": "Input Reading",
-        "is_ai_grading_available": false,
-        "order_criterion": 1,
-        "title": "Criterion 1",
-        "program": 94,
-        "Ratings": [
-            {
-                "id": 1438,
-                "description": "Incorrect",
-                "marks": 0.0,
-                "title": "B",
-                "criteria": 575
+                "criteria": 62
             },
             {
-                "id": 1437,
-                "description": "Reads the full sequence correctly from cin and handles empty input properly",
-                "marks": 20.0,
-                "title": "A",
-                "criteria": 575
-            }
-        ]
-    }
-]
-
-        Submission IDs  : ['25299']
-        ===================================================
-        
-        ==================== LOG ENTRY ====================
-        Timestamp       : 2025-05-12 12:49:29
-
-        Problem Statement:
-        Write a C++ program to read a sequence of characters consisting of characters ( and ) and identify if it is VALID or INVALID.Below is the definition of a VALID sequence.   1. The empty sequence (containing 0 symbols) is VALID.   2. If A is a VALID sequence, then so is (A).   3. If A and B are two VALID sequences, then AB (writing them side-by-side) is a valid sequence as well.For example, to see that (()(())) is valid, we note that it is of the form (A) where A is of the form CD, where C is the sequence () and D is the sequence (()); C is valid because if is of the form (E) where E is empty, and D is valid as it is of the form (C).Hint: To check whether a sequence is valid, it is enough to keep track of the count of (s and )s seen at any point in the sequence, when scanning the sequence left to right. You can use a few examples to understand when a sequence becomes invalid.Output: Your output should be of the form VALID N or INVALID N, where N = count of ( - count of )  for the entire sequence.
-
-        Criteria:
-        [
-    {
-        "id": 575,
-        "description": "Input Reading",
-        "is_ai_grading_available": false,
-        "order_criterion": 1,
-        "title": "Criterion 1",
-        "program": 94,
-        "Ratings": [
-            {
-                "id": 1438,
-                "description": "Incorrect",
-                "marks": 0.0,
-                "title": "B",
-                "criteria": 575
-            },
-            {
-                "id": 1437,
-                "description": "Reads the full sequence correctly from cin and handles empty input properly",
-                "marks": 20.0,
-                "title": "A",
-                "criteria": 575
-            }
-        ]
-    }
-]
-
-        Submission IDs  : ['25299']
-        ===================================================
-        
-        ==================== LOG ENTRY ====================
-        Timestamp       : 2025-05-12 12:50:34
-
-        Problem Statement:
-        Write a C++ program to read a sequence of characters consisting of characters ( and ) and identify if it is VALID or INVALID.Below is the definition of a VALID sequence.   1. The empty sequence (containing 0 symbols) is VALID.   2. If A is a VALID sequence, then so is (A).   3. If A and B are two VALID sequences, then AB (writing them side-by-side) is a valid sequence as well.For example, to see that (()(())) is valid, we note that it is of the form (A) where A is of the form CD, where C is the sequence () and D is the sequence (()); C is valid because if is of the form (E) where E is empty, and D is valid as it is of the form (C).Hint: To check whether a sequence is valid, it is enough to keep track of the count of (s and )s seen at any point in the sequence, when scanning the sequence left to right. You can use a few examples to understand when a sequence becomes invalid.Output: Your output should be of the form VALID N or INVALID N, where N = count of ( - count of )  for the entire sequence.
-
-        Criteria:
-        [
-    {
-        "id": 575,
-        "description": "Input Reading",
-        "is_ai_grading_available": false,
-        "order_criterion": 1,
-        "title": "Criterion 1",
-        "program": 94,
-        "Ratings": [
-            {
-                "id": 1438,
-                "description": "Incorrect",
-                "marks": 0.0,
-                "title": "B",
-                "criteria": 575
-            },
-            {
-                "id": 1437,
-                "description": "Reads the full sequence correctly from cin and handles empty input properly",
-                "marks": 20.0,
-                "title": "A",
-                "criteria": 575
-            }
-        ]
-    }
-]
-
-        Submission IDs  : ['25299']
-        ===================================================
-        
-        ==================== LOG ENTRY ====================
-        Timestamp       : 2025-05-13 06:53:18
-
-        Problem Statement:
-        Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
-
-        Criteria:
-        [
-    {
-        "id": 909,
-        "description": "Output",
-        "is_ai_grading_available": false,
-        "order_criterion": 5,
-        "title": "Criterion 5 ",
-        "program": 149,
-        "Ratings": [
-            {
-                "id": 2292,
-                "description": "Major issue. ",
-                "marks": 0.0,
-                "title": "C",
-                "criteria": 909
-            },
-            {
-                "id": 2291,
+                "id": 185,
                 "description": "Some issue. ",
                 "marks": 0.5,
                 "title": "B",
-                "criteria": 909
+                "criteria": 62
             },
             {
-                "id": 2290,
-                "description": "Correctly prints the output",
-                "marks": 1.0,
-                "title": "A",
-                "criteria": 909
+                "id": 186,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 62
             }
         ]
     },
     {
-        "id": 908,
-        "description": "Declaration of variables",
+        "id": 63,
+        "description": "Declaration of variable",
         "is_ai_grading_available": false,
-        "order_criterion": 4,
-        "title": "Criterion 4 ",
-        "program": 149,
+        "order_criterion": 0,
+        "title": "Criterion 2",
+        "program": 83,
         "Ratings": [
             {
-                "id": 2289,
-                "description": "Major issue. ",
-                "marks": 0.0,
-                "title": "C",
-                "criteria": 908
+                "id": 187,
+                "description": "correctly declares two variables of type float/double",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 63
             },
             {
-                "id": 2288,
+                "id": 188,
                 "description": "Some issue. ",
                 "marks": 0.5,
                 "title": "B",
-                "criteria": 908
+                "criteria": 63
             },
             {
-                "id": 2287,
-                "description": "correctly declares the two variables as char",
-                "marks": 1.0,
-                "title": "A",
-                "criteria": 908
+                "id": 189,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 63
             }
         ]
     },
     {
-        "id": 907,
+        "id": 64,
         "description": "Accepting input",
         "is_ai_grading_available": false,
-        "order_criterion": 3,
-        "title": "Criterion 3 ",
-        "program": 149,
+        "order_criterion": 0,
+        "title": "Criterion 3",
+        "program": 83,
         "Ratings": [
             {
-                "id": 2286,
-                "description": "Major issue. ",
-                "marks": 0.0,
-                "title": "C",
-                "criteria": 907
+                "id": 190,
+                "description": "correctly accepts input in the two variables",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 64
             },
             {
-                "id": 2285,
+                "id": 191,
                 "description": "Some issue. ",
                 "marks": 0.5,
                 "title": "B",
-                "criteria": 907
+                "criteria": 64
             },
             {
-                "id": 2284,
-                "description": "correctly accepts two characters as input",
-                "marks": 1.0,
-                "title": "A",
-                "criteria": 907
+                "id": 192,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 64
             }
         ]
     },
     {
-        "id": 906,
-        "description": "comparing for tie",
+        "id": 65,
+        "description": "Printing Output",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 4",
+        "program": 83,
+        "Ratings": [
+            {
+                "id": 193,
+                "description": "Correctly prints the two decimal values with spaces",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 65
+            },
+            {
+                "id": 194,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 65
+            },
+            {
+                "id": 195,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 65
+            }
+        ]
+    }
+]
+
+        Submission IDs  : ['635']
+        ===================================================
+        
+        ==================== LOG ENTRY ====================
+        Timestamp       : 2025-06-05 12:16:13
+
+        Problem Statement:
+        Problem Statement
+Write a C++ program to print an Inverted right-angle triangle pattern using asterisks (*). The program should accept a positive integer n representing the number of rows and then print the pattern such that:
+
+The first row contains n asterisks
+The second row contains n-1 asterisks
+...
+The last row (n-th) contains 1 asterisk
+
+Input Format
+
+A single positive integer n.
+
+ 
+Output Format
+
+Print the triangle pattern with n rows as described.
+
+ 
+Assumptions on Input
+The value of n will always be an positive number between 1 and 20, inclusive.
+
+        Criteria:
+        [
+    {
+        "id": 66,
+        "description": "Inclusion of  Header File",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 1",
+        "program": 81,
+        "Ratings": [
+            {
+                "id": 196,
+                "description": "correctly includes the header file",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 66
+            },
+            {
+                "id": 197,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 66
+            },
+            {
+                "id": 198,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 66
+            }
+        ]
+    },
+    {
+        "id": 67,
+        "description": "Declaration of variable",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 2",
+        "program": 81,
+        "Ratings": [
+            {
+                "id": 199,
+                "description": "correctly declares input variable",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 67
+            },
+            {
+                "id": 200,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 67
+            },
+            {
+                "id": 201,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 67
+            }
+        ]
+    },
+    {
+        "id": 68,
+        "description": "Accepting input (number of rows)",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 3",
+        "program": 81,
+        "Ratings": [
+            {
+                "id": 202,
+                "description": "correctly accepts user input in the variable",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 68
+            },
+            {
+                "id": 203,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 68
+            },
+            {
+                "id": 204,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 68
+            }
+        ]
+    },
+    {
+        "id": 69,
+        "description": "Outer loop to iterate through number of rows",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 4",
+        "program": 81,
+        "Ratings": [
+            {
+                "id": 205,
+                "description": "Correct logic to iterate through number of rows",
+                "marks": 2.0,
+                "title": "A",
+                "criteria": 69
+            },
+            {
+                "id": 206,
+                "description": "Some issue. ",
+                "marks": 1.0,
+                "title": "B",
+                "criteria": 69
+            },
+            {
+                "id": 207,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 69
+            }
+        ]
+    },
+    {
+        "id": 70,
+        "description": "Inner loop to iterate through columns",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 5",
+        "program": 81,
+        "Ratings": [
+            {
+                "id": 208,
+                "description": "Correct logic to iterate through columns",
+                "marks": 2.0,
+                "title": "A",
+                "criteria": 70
+            },
+            {
+                "id": 209,
+                "description": "Some issue. ",
+                "marks": 1.0,
+                "title": "B",
+                "criteria": 70
+            },
+            {
+                "id": 210,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 70
+            }
+        ]
+    },
+    {
+        "id": 71,
+        "description": "Printing star",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 6",
+        "program": 81,
+        "Ratings": [
+            {
+                "id": 211,
+                "description": "Correctly prints '*' for each iteration ",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 71
+            },
+            {
+                "id": 212,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 71
+            },
+            {
+                "id": 213,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 71
+            }
+        ]
+    },
+    {
+        "id": 72,
+        "description": "Handling new line character",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 7",
+        "program": 81,
+        "Ratings": [
+            {
+                "id": 214,
+                "description": "Correctly prints a newline character to get to the new row",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 72
+            },
+            {
+                "id": 215,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 72
+            },
+            {
+                "id": 216,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 72
+            }
+        ]
+    }
+]
+
+        Submission IDs  : ['431', '432', '481', '529', '539', '570', '587', '617', '618', '628', '630', '639']
+        ===================================================
+        
+        ==================== LOG ENTRY ====================
+        Timestamp       : 2025-06-05 12:16:48
+
+        Problem Statement:
+        Problem StatementWrite a C++ program that takes a single integer N as input and prints the sum of the first N natural numbers using the formula:Sum of N natural numbers = N ( N + 1 ) / 2Example: If N = 5, then sum = 5 ( 5 + 1 ) / 2 = (5 x 6) / 2 = 30 / 2 = 15Input FormatA single integer N.Output FormatA single integer representing the sum of the first N natural numbers.Assumptions on InputInput N is a natural number.N is small enough such that the sum result fits in a 32-bit integer.NoteDo not write any C++ statements for printing general messages. For example, the following should NOT be present in your program:cout << "Enter a number:", cout << "The computed answer is", etc. cout should be used to print only the computed final output. In addition, do not print unnecessary spaces unless specified in the program. If any hard coding is found, or if any test case passes by merely writing a cout statement and without any logic, then the marks for that test case will NOT be awarded.
+
+        Criteria:
+        [
+    {
+        "id": 38,
+        "description": "Inclusion of  Header File",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 1",
+        "program": 80,
+        "Ratings": [
+            {
+                "id": 112,
+                "description": "correctly includes the header file",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 38
+            },
+            {
+                "id": 113,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 38
+            },
+            {
+                "id": 114,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 38
+            }
+        ]
+    },
+    {
+        "id": 39,
+        "description": "Declaration of variable",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 2",
+        "program": 80,
+        "Ratings": [
+            {
+                "id": 115,
+                "description": "correctly declares a variable of type int or long",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 39
+            },
+            {
+                "id": 116,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 39
+            },
+            {
+                "id": 117,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 39
+            }
+        ]
+    },
+    {
+        "id": 40,
+        "description": "Accepting input",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 3",
+        "program": 80,
+        "Ratings": [
+            {
+                "id": 118,
+                "description": "correctly accepts a integer as input",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 40
+            },
+            {
+                "id": 119,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 40
+            },
+            {
+                "id": 120,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 40
+            }
+        ]
+    },
+    {
+        "id": 41,
+        "description": "Calculation logic",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 4",
+        "program": 80,
+        "Ratings": [
+            {
+                "id": 121,
+                "description": "correctly calculated the sum",
+                "marks": 2.0,
+                "title": "A",
+                "criteria": 41
+            },
+            {
+                "id": 122,
+                "description": "Some issue. ",
+                "marks": 1.0,
+                "title": "B",
+                "criteria": 41
+            },
+            {
+                "id": 123,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 41
+            }
+        ]
+    },
+    {
+        "id": 42,
+        "description": "Printing Output",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 5",
+        "program": 80,
+        "Ratings": [
+            {
+                "id": 124,
+                "description": "Correctly prints the sum",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 42
+            },
+            {
+                "id": 125,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 42
+            },
+            {
+                "id": 126,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 42
+            }
+        ]
+    }
+]
+
+        Submission IDs  : ['391', '452', '461', '468', '471', '487', '495', '509', '512', '551', '567', '578', '583', '593', '622', '641']
+        ===================================================
+        
+        ==================== LOG ENTRY ====================
+        Timestamp       : 2025-06-05 12:17:25
+
+        Problem Statement:
+        Problem StatementWrite a C++ program that takes a single lowercase English letter as input and prints its uppercase equivalent using ASCII manipulation.Example:'a' converts to 'A'.Hint : Lowercase letters 'a' to 'z' have ASCII values 97 to 122.Uppercase letters 'A' to 'Z' have ASCII values 65 to 90.Input FormatA single character: a lowercase English letter (a to z).Output FormatThe corresponding uppercase English letter.Assumptions on InputInput is guaranteed to be a lowercase letter.No need to validate or handle non-alphabetic input.NoteDo not write any C++ statements for printing general messages. For example, the following should NOT be present in your program:cout << "Enter a number:", cout << "The computed answer is", etc. cout should be used to print only the computed final output. In addition, do not print unnecessary spaces unless specified in the program. If any hard coding is found, or if any test case passes by merely writing a cout statement and without any logic, then the marks for that test case will NOT be awarded.
+
+        Criteria:
+        [
+    {
+        "id": 43,
+        "description": "Inclusion of  Header File",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 1",
+        "program": 78,
+        "Ratings": [
+            {
+                "id": 127,
+                "description": "correctly includes the header file",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 43
+            },
+            {
+                "id": 128,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 43
+            },
+            {
+                "id": 129,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 43
+            }
+        ]
+    },
+    {
+        "id": 44,
+        "description": "Declaration of variable",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 2",
+        "program": 78,
+        "Ratings": [
+            {
+                "id": 130,
+                "description": "correctly declares a variable of type char",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 44
+            },
+            {
+                "id": 131,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 44
+            },
+            {
+                "id": 132,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 44
+            }
+        ]
+    },
+    {
+        "id": 45,
+        "description": "Accepting input",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 3",
+        "program": 78,
+        "Ratings": [
+            {
+                "id": 133,
+                "description": "correctly accepts a character as input",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 45
+            },
+            {
+                "id": 134,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 45
+            },
+            {
+                "id": 135,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 45
+            }
+        ]
+    },
+    {
+        "id": 46,
+        "description": "Conversion Logic",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 4",
+        "program": 78,
+        "Ratings": [
+            {
+                "id": 136,
+                "description": "Correctly writes the logic to convert i.e character-32",
+                "marks": 2.0,
+                "title": "A",
+                "criteria": 46
+            },
+            {
+                "id": 137,
+                "description": "Some issue. ",
+                "marks": 1.0,
+                "title": "B",
+                "criteria": 46
+            },
+            {
+                "id": 138,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 46
+            }
+        ]
+    },
+    {
+        "id": 47,
+        "description": "Printing Output",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 5",
+        "program": 78,
+        "Ratings": [
+            {
+                "id": 139,
+                "description": "Correctly prints the Uppercase character",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 47
+            },
+            {
+                "id": 140,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 47
+            },
+            {
+                "id": 141,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 47
+            }
+        ]
+    }
+]
+
+        Submission IDs  : ['492', '494', '510', '520', '550', '553', '596', '626', '633', '645']
+        ===================================================
+        
+        ==================== LOG ENTRY ====================
+        Timestamp       : 2025-06-05 12:21:16
+
+        Problem Statement:
+        Problem Statement
+Write a C++ program that continuously takes student marks as input till -1 is entered. For each mark, calculate and print the grade. Also print whether the student has passed or failed:
+The grade of the student based on the marks:
+A for marks > 90
+B for marks > 80
+C for marks > 70
+D for marks >= 60
+F for marks < 60
+Whether the student has passed or failed:
+PASS if marks >= 60
+FAIL if marks < 60
+Important : Keep on taking student marks until -1 is inputted by the user.
+ 
+Input Format
+
+Multiple lines of integers, each denoting a student's marks.
+Input ends when -1 is entered.
+
+Output Format
+
+For each student mark input, output two lines:
+Grade (A, B, C, D, or F)
+ PASS or FAIL
+
+Assumptions on Input
+
+Marks are integers in the range 0 to 100.
+-1 is only used to terminate input.
+
+ 
+Note
+
+Do not write any C++ statements for printing general messages. For example, the following should NOT be present in your program:
+cout << "Enter a number:", 
+cout << "The computed answer is", etc. 
+cout should be used to print only the computed final output. In addition, do not print unnecessary spaces unless specified in the program. 
+If any hard coding is found, or if any test case passes by merely writing a cout statement and without any logic, then the marks for that test case will NOT be awarded.
+
+
+        Criteria:
+        [
+    {
+        "id": 31,
+        "description": "Inclusion of  Header File",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 1",
+        "program": 76,
+        "Ratings": [
+            {
+                "id": 91,
+                "description": "correctly includes the header file",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 31
+            },
+            {
+                "id": 92,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 31
+            },
+            {
+                "id": 93,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 31
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "description": "Declaration of variables",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 2",
+        "program": 76,
+        "Ratings": [
+            {
+                "id": 94,
+                "description": "correctly declares the variable n as integer",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 32
+            },
+            {
+                "id": 95,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 32
+            },
+            {
+                "id": 96,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 32
+            }
+        ]
+    },
+    {
+        "id": 33,
+        "description": "Loop",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 3",
+        "program": 76,
+        "Ratings": [
+            {
+                "id": 97,
+                "description": "Correctly implements the loop till the user inputs -1",
+                "marks": 2.0,
+                "title": "A",
+                "criteria": 33
+            },
+            {
+                "id": 98,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 33
+            },
+            {
+                "id": 99,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 33
+            }
+        ]
+    },
+    {
+        "id": 34,
+        "description": "Accepting input",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 4",
+        "program": 76,
+        "Ratings": [
+            {
+                "id": 100,
+                "description": "correctly accepts an integer n as input",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 34
+            },
+            {
+                "id": 101,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 34
+            },
+            {
+                "id": 102,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 34
+            }
+        ]
+    },
+    {
+        "id": 35,
+        "description": "Logic of determining grade based on the marks obtained",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 5",
+        "program": 76,
+        "Ratings": [
+            {
+                "id": 103,
+                "description": "Correctly  implements  if-else-if statements to print the correct grade based on the marks obtained",
+                "marks": 3.0,
+                "title": "A",
+                "criteria": 35
+            },
+            {
+                "id": 104,
+                "description": "Some issue with upto two conditions",
+                "marks": 2.0,
+                "title": "B",
+                "criteria": 35
+            },
+            {
+                "id": 105,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 35
+            }
+        ]
+    },
+    {
+        "id": 36,
+        "description": "Logic of determining PASS/FAIL",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 6",
+        "program": 76,
+        "Ratings": [
+            {
+                "id": 106,
+                "description": "Correctly checks if the marks is >=60 for printing Pass or Fail",
+                "marks": 2.0,
+                "title": "A",
+                "criteria": 36
+            },
+            {
+                "id": 107,
+                "description": "Some issue. ",
+                "marks": 1.0,
+                "title": "B",
+                "criteria": 36
+            },
+            {
+                "id": 108,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 36
+            }
+        ]
+    },
+    {
+        "id": 37,
+        "description": "Printing the output ",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 7",
+        "program": 76,
+        "Ratings": [
+            {
+                "id": 109,
+                "description": "Correctly writes the cout statement  inside the conditional statement with Uppercase alphabet of grade and the Pass/Fail statement",
+                "marks": 2.0,
+                "title": "A",
+                "criteria": 37
+            },
+            {
+                "id": 110,
+                "description": "Some issue. ",
+                "marks": 1.0,
+                "title": "B",
+                "criteria": 37
+            },
+            {
+                "id": 111,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 37
+            }
+        ]
+    }
+]
+
+        Submission IDs  : ['417', '514', '534', '541', '543', '568', '575', '581', '589', '598', '629', '646', '651']
+        ===================================================
+        
+        ==================== LOG ENTRY ====================
+        Timestamp       : 2025-06-05 12:38:25
+
+        Problem Statement:
+        Problem StatementWrite a C++ program that takes two decimal numbers as input and prints them each separated by a single space.Input FormatTwo decimal numbers each separated by a single space Output FormatTwo decimal numbers each separated by a single spaceAssumptions on InputThe inputs given by the user will be from -100.0 to 100.0, both inclusive. NoteDo not write any C++ statements for printing general messages. For example, the following should NOT be present in your program:cout << "Enter a number:", cout << "The computed answer is", etc. cout should be used to print only the computed final output. In addition, do not print unnecessary spaces unless specified in the program. If any hard coding is found, or if any test case passes by merely writing a cout statement and without any logic, then the marks for that test case will NOT be awarded.
+
+        Criteria:
+        [
+    {
+        "id": 62,
+        "description": "Inclusion of  Header File",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 1",
+        "program": 83,
+        "Ratings": [
+            {
+                "id": 184,
+                "description": "correctly includes the header file",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 62
+            },
+            {
+                "id": 185,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 62
+            },
+            {
+                "id": 186,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 62
+            }
+        ]
+    },
+    {
+        "id": 63,
+        "description": "Declaration of variable",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 2",
+        "program": 83,
+        "Ratings": [
+            {
+                "id": 187,
+                "description": "correctly declares two variables of type float/double",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 63
+            },
+            {
+                "id": 188,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 63
+            },
+            {
+                "id": 189,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 63
+            }
+        ]
+    },
+    {
+        "id": 64,
+        "description": "Accepting input",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 3",
+        "program": 83,
+        "Ratings": [
+            {
+                "id": 190,
+                "description": "correctly accepts input in the two variables",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 64
+            },
+            {
+                "id": 191,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 64
+            },
+            {
+                "id": 192,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 64
+            }
+        ]
+    },
+    {
+        "id": 65,
+        "description": "Printing Output",
+        "is_ai_grading_available": false,
+        "order_criterion": 0,
+        "title": "Criterion 4",
+        "program": 83,
+        "Ratings": [
+            {
+                "id": 193,
+                "description": "Correctly prints the two decimal values with spaces",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 65
+            },
+            {
+                "id": 194,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 65
+            },
+            {
+                "id": 195,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 65
+            }
+        ]
+    }
+]
+
+        Submission IDs  : ['380', '386', '388', '392', '425', '435', '464', '507', '528', '530', '546', '569', '613', '614', '615', '620', '635']
+        ===================================================
+        
+        ==================== LOG ENTRY ====================
+        Timestamp       : 2025-06-05 12:39:05
+
+        Problem Statement:
+        Problem StatementWrite a C++ program that takes 3 integers as inputs and prints them each separated by a single space.Input FormatThree space separated integersOutput FormatThree space separated integersAssumptions on InputThe inputs will range from -100 to 100NoteDo not write any C++ statements for printing general messages. For example, the following should NOT be present in your program:cout << "Enter a number:", cout << "The computed answer is", etc. cout should be used to print only the computed final output. In addition, do not print unnecessary spaces unless specified in the program. If any hard coding is found, or if any test case passes by merely writing a cout statement and without any logic, then the marks for that test case will NOT be awarded.
+
+        Criteria:
+        [
+    {
+        "id": 58,
+        "description": "Inclusion of  Header File",
+        "is_ai_grading_available": false,
+        "order_criterion": 1,
+        "title": "Criterion 1",
+        "program": 84,
+        "Ratings": [
+            {
+                "id": 172,
+                "description": "correctly includes the header file",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 58
+            },
+            {
+                "id": 173,
+                "description": "Some issue. ",
+                "marks": 0.5,
+                "title": "B",
+                "criteria": 58
+            },
+            {
+                "id": 174,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 58
+            }
+        ]
+    },
+    {
+        "id": 59,
+        "description": "Declaration of variable",
         "is_ai_grading_available": false,
         "order_criterion": 2,
         "title": "Criterion 2",
-        "program": 149,
+        "program": 84,
         "Ratings": [
             {
-                "id": 2283,
-                "description": "Major issue. ",
-                "marks": 0.0,
-                "title": "C",
-                "criteria": 906
+                "id": 175,
+                "description": "correctly declares three variables of type int",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 59
             },
             {
-                "id": 2282,
+                "id": 176,
                 "description": "Some issue. ",
                 "marks": 0.5,
                 "title": "B",
-                "criteria": 906
+                "criteria": 59
             },
             {
-                "id": 2281,
-                "description": "correctly compares if both players have input same response. ",
-                "marks": 1.0,
-                "title": "A",
-                "criteria": 906
+                "id": 177,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 59
             }
         ]
     },
     {
-        "id": 905,
-        "description": "Comparing for player 1 and 2 win",
-        "is_ai_grading_available": false,
-        "order_criterion": 1,
-        "title": "Criterion 1 ",
-        "program": 149,
-        "Ratings": [
-            {
-                "id": 2280,
-                "description": "Major issue. ",
-                "marks": 0.0,
-                "title": "C",
-                "criteria": 905
-            },
-            {
-                "id": 2279,
-                "description": "Some issue. ",
-                "marks": 2.0,
-                "title": "B",
-                "criteria": 905
-            },
-            {
-                "id": 2278,
-                "description": "correctly compares all cases of player 1 winning. ",
-                "marks": 4.0,
-                "title": "A",
-                "criteria": 905
-            }
-        ]
-    }
-]
-
-        Submission IDs  : ['25490']
-        ===================================================
-        
-        ==================== LOG ENTRY ====================
-        Timestamp       : 2025-05-13 06:54:38
-
-        Problem Statement:
-        Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
-
-        Criteria:
-        [
-    {
-        "id": 909,
-        "description": "Output",
-        "is_ai_grading_available": false,
-        "order_criterion": 5,
-        "title": "Criterion 5 ",
-        "program": 149,
-        "Ratings": [
-            {
-                "id": 2292,
-                "description": "Major issue. ",
-                "marks": 0.0,
-                "title": "C",
-                "criteria": 909
-            },
-            {
-                "id": 2291,
-                "description": "Some issue. ",
-                "marks": 0.5,
-                "title": "B",
-                "criteria": 909
-            },
-            {
-                "id": 2290,
-                "description": "Correctly prints the output",
-                "marks": 1.0,
-                "title": "A",
-                "criteria": 909
-            }
-        ]
-    },
-    {
-        "id": 908,
-        "description": "Declaration of variables",
-        "is_ai_grading_available": false,
-        "order_criterion": 4,
-        "title": "Criterion 4 ",
-        "program": 149,
-        "Ratings": [
-            {
-                "id": 2289,
-                "description": "Major issue. ",
-                "marks": 0.0,
-                "title": "C",
-                "criteria": 908
-            },
-            {
-                "id": 2288,
-                "description": "Some issue. ",
-                "marks": 0.5,
-                "title": "B",
-                "criteria": 908
-            },
-            {
-                "id": 2287,
-                "description": "correctly declares the two variables as char",
-                "marks": 1.0,
-                "title": "A",
-                "criteria": 908
-            }
-        ]
-    },
-    {
-        "id": 907,
+        "id": 60,
         "description": "Accepting input",
         "is_ai_grading_available": false,
         "order_criterion": 3,
-        "title": "Criterion 3 ",
-        "program": 149,
+        "title": "Criterion 3",
+        "program": 84,
         "Ratings": [
             {
-                "id": 2286,
-                "description": "Major issue. ",
-                "marks": 0.0,
-                "title": "C",
-                "criteria": 907
+                "id": 178,
+                "description": "correctly accepts input in the three integers",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 60
             },
             {
-                "id": 2285,
+                "id": 179,
                 "description": "Some issue. ",
                 "marks": 0.5,
                 "title": "B",
-                "criteria": 907
+                "criteria": 60
             },
             {
-                "id": 2284,
-                "description": "correctly accepts two characters as input",
-                "marks": 1.0,
-                "title": "A",
-                "criteria": 907
+                "id": 180,
+                "description": "Major issue. ",
+                "marks": 0.0,
+                "title": "C",
+                "criteria": 60
             }
         ]
     },
     {
-        "id": 906,
-        "description": "comparing for tie",
-        "is_ai_grading_available": false,
-        "order_criterion": 2,
-        "title": "Criterion 2",
-        "program": 149,
-        "Ratings": [
-            {
-                "id": 2283,
-                "description": "Major issue. ",
-                "marks": 0.0,
-                "title": "C",
-                "criteria": 906
-            },
-            {
-                "id": 2282,
-                "description": "Some issue. ",
-                "marks": 0.5,
-                "title": "B",
-                "criteria": 906
-            },
-            {
-                "id": 2281,
-                "description": "correctly compares if both players have input same response. ",
-                "marks": 1.0,
-                "title": "A",
-                "criteria": 906
-            }
-        ]
-    },
-    {
-        "id": 905,
-        "description": "Comparing for player 1 and 2 win",
-        "is_ai_grading_available": false,
-        "order_criterion": 1,
-        "title": "Criterion 1 ",
-        "program": 149,
-        "Ratings": [
-            {
-                "id": 2280,
-                "description": "Major issue. ",
-                "marks": 0.0,
-                "title": "C",
-                "criteria": 905
-            },
-            {
-                "id": 2279,
-                "description": "Some issue. ",
-                "marks": 2.0,
-                "title": "B",
-                "criteria": 905
-            },
-            {
-                "id": 2278,
-                "description": "correctly compares all cases of player 1 winning. ",
-                "marks": 4.0,
-                "title": "A",
-                "criteria": 905
-            }
-        ]
-    }
-]
-
-        Submission IDs  : ['25490']
-        ===================================================
-        
-        ==================== LOG ENTRY ====================
-        Timestamp       : 2025-05-13 08:04:17
-
-        Problem Statement:
-        Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
-
-        Criteria:
-        [
-    {
-        "id": 909,
-        "description": "Output",
-        "is_ai_grading_available": false,
-        "order_criterion": 5,
-        "title": "Criterion 5 ",
-        "program": 149,
-        "Ratings": [
-            {
-                "id": 2292,
-                "description": "Major issue. ",
-                "marks": 0.0,
-                "title": "C",
-                "criteria": 909
-            },
-            {
-                "id": 2291,
-                "description": "Some issue. ",
-                "marks": 0.5,
-                "title": "B",
-                "criteria": 909
-            },
-            {
-                "id": 2290,
-                "description": "Correctly prints the output",
-                "marks": 1.0,
-                "title": "A",
-                "criteria": 909
-            }
-        ]
-    },
-    {
-        "id": 908,
-        "description": "Declaration of variables",
+        "id": 61,
+        "description": "Printing Output",
         "is_ai_grading_available": false,
         "order_criterion": 4,
-        "title": "Criterion 4 ",
-        "program": 149,
+        "title": "Criterion 4",
+        "program": 84,
         "Ratings": [
             {
-                "id": 2289,
-                "description": "Major issue. ",
-                "marks": 0.0,
-                "title": "C",
-                "criteria": 908
+                "id": 181,
+                "description": "Correctly prints the three integer with spaces",
+                "marks": 1.0,
+                "title": "A",
+                "criteria": 61
             },
             {
-                "id": 2288,
+                "id": 182,
                 "description": "Some issue. ",
                 "marks": 0.5,
                 "title": "B",
-                "criteria": 908
+                "criteria": 61
             },
             {
-                "id": 2287,
-                "description": "correctly declares the two variables as char",
-                "marks": 1.0,
-                "title": "A",
-                "criteria": 908
-            }
-        ]
-    },
-    {
-        "id": 907,
-        "description": "Accepting input",
-        "is_ai_grading_available": false,
-        "order_criterion": 3,
-        "title": "Criterion 3 ",
-        "program": 149,
-        "Ratings": [
-            {
-                "id": 2286,
+                "id": 183,
                 "description": "Major issue. ",
                 "marks": 0.0,
                 "title": "C",
-                "criteria": 907
-            },
-            {
-                "id": 2285,
-                "description": "Some issue. ",
-                "marks": 0.5,
-                "title": "B",
-                "criteria": 907
-            },
-            {
-                "id": 2284,
-                "description": "correctly accepts two characters as input",
-                "marks": 1.0,
-                "title": "A",
-                "criteria": 907
-            }
-        ]
-    },
-    {
-        "id": 906,
-        "description": "comparing for tie",
-        "is_ai_grading_available": false,
-        "order_criterion": 2,
-        "title": "Criterion 2",
-        "program": 149,
-        "Ratings": [
-            {
-                "id": 2283,
-                "description": "Major issue. ",
-                "marks": 0.0,
-                "title": "C",
-                "criteria": 906
-            },
-            {
-                "id": 2282,
-                "description": "Some issue. ",
-                "marks": 0.5,
-                "title": "B",
-                "criteria": 906
-            },
-            {
-                "id": 2281,
-                "description": "correctly compares if both players have input same response. ",
-                "marks": 1.0,
-                "title": "A",
-                "criteria": 906
-            }
-        ]
-    },
-    {
-        "id": 905,
-        "description": "Comparing for player 1 and 2 win",
-        "is_ai_grading_available": false,
-        "order_criterion": 1,
-        "title": "Criterion 1 ",
-        "program": 149,
-        "Ratings": [
-            {
-                "id": 2280,
-                "description": "Major issue. ",
-                "marks": 0.0,
-                "title": "C",
-                "criteria": 905
-            },
-            {
-                "id": 2279,
-                "description": "Some issue. ",
-                "marks": 2.0,
-                "title": "B",
-                "criteria": 905
-            },
-            {
-                "id": 2278,
-                "description": "correctly compares all cases of player 1 winning. ",
-                "marks": 4.0,
-                "title": "A",
-                "criteria": 905
+                "criteria": 61
             }
         ]
     }
 ]
 
-        Submission IDs  : ['25490']
-        ===================================================
-        
-        ==================== LOG ENTRY ====================
-        Timestamp       : 2025-05-13 08:09:08
-
-        Problem Statement:
-        Write a C++ program to accept two characters as input from the user. These denote the choice made by player 1 and player 2, respectively. The choices would be r for rock, p for paper, and s for scissors. Print which player wins (1 or 2, or T for tie) based on the character input.
-
-        Criteria:
-        [
-    {
-        "id": 909,
-        "description": "Output",
-        "is_ai_grading_available": false,
-        "order_criterion": 5,
-        "title": "Criterion 5 ",
-        "program": 149,
-        "Ratings": [
-            {
-                "id": 2292,
-                "description": "Major issue. ",
-                "marks": 0.0,
-                "title": "C",
-                "criteria": 909
-            },
-            {
-                "id": 2291,
-                "description": "Some issue. ",
-                "marks": 0.5,
-                "title": "B",
-                "criteria": 909
-            },
-            {
-                "id": 2290,
-                "description": "Correctly prints the output",
-                "marks": 1.0,
-                "title": "A",
-                "criteria": 909
-            }
-        ]
-    },
-    {
-        "id": 908,
-        "description": "Declaration of variables",
-        "is_ai_grading_available": false,
-        "order_criterion": 4,
-        "title": "Criterion 4 ",
-        "program": 149,
-        "Ratings": [
-            {
-                "id": 2289,
-                "description": "Major issue. ",
-                "marks": 0.0,
-                "title": "C",
-                "criteria": 908
-            },
-            {
-                "id": 2288,
-                "description": "Some issue. ",
-                "marks": 0.5,
-                "title": "B",
-                "criteria": 908
-            },
-            {
-                "id": 2287,
-                "description": "correctly declares the two variables as char",
-                "marks": 1.0,
-                "title": "A",
-                "criteria": 908
-            }
-        ]
-    },
-    {
-        "id": 907,
-        "description": "Accepting input",
-        "is_ai_grading_available": false,
-        "order_criterion": 3,
-        "title": "Criterion 3 ",
-        "program": 149,
-        "Ratings": [
-            {
-                "id": 2286,
-                "description": "Major issue. ",
-                "marks": 0.0,
-                "title": "C",
-                "criteria": 907
-            },
-            {
-                "id": 2285,
-                "description": "Some issue. ",
-                "marks": 0.5,
-                "title": "B",
-                "criteria": 907
-            },
-            {
-                "id": 2284,
-                "description": "correctly accepts two characters as input",
-                "marks": 1.0,
-                "title": "A",
-                "criteria": 907
-            }
-        ]
-    },
-    {
-        "id": 906,
-        "description": "comparing for tie",
-        "is_ai_grading_available": false,
-        "order_criterion": 2,
-        "title": "Criterion 2",
-        "program": 149,
-        "Ratings": [
-            {
-                "id": 2283,
-                "description": "Major issue. ",
-                "marks": 0.0,
-                "title": "C",
-                "criteria": 906
-            },
-            {
-                "id": 2282,
-                "description": "Some issue. ",
-                "marks": 0.5,
-                "title": "B",
-                "criteria": 906
-            },
-            {
-                "id": 2281,
-                "description": "correctly compares if both players have input same response. ",
-                "marks": 1.0,
-                "title": "A",
-                "criteria": 906
-            }
-        ]
-    },
-    {
-        "id": 905,
-        "description": "Comparing for player 1 and 2 win",
-        "is_ai_grading_available": false,
-        "order_criterion": 1,
-        "title": "Criterion 1 ",
-        "program": 149,
-        "Ratings": [
-            {
-                "id": 2280,
-                "description": "Major issue. ",
-                "marks": 0.0,
-                "title": "C",
-                "criteria": 905
-            },
-            {
-                "id": 2279,
-                "description": "Some issue. ",
-                "marks": 2.0,
-                "title": "B",
-                "criteria": 905
-            },
-            {
-                "id": 2278,
-                "description": "correctly compares all cases of player 1 winning. ",
-                "marks": 4.0,
-                "title": "A",
-                "criteria": 905
-            }
-        ]
-    }
-]
-
-        Submission IDs  : ['25490']
-        ===================================================
-        
-        ==================== LOG ENTRY ====================
-        Timestamp       : 2025-06-03 18:21:50
-
-        Problem Statement:
-        4.cpp       (14 Marks)Write a C++ program that accepts an integer N from the user and finds all the prime factors of N.Input Format:The input consists of one value: NOutput Format:Print all the prime factors of N from smallest to largest, each in the same line separated by a space.Constraints (Assume)2 <= N <= 10^6Note: Do not write any C++ statements for printing general messages. For example, the following should NOT be present in your program:cout << "Enter a number:",cout << "The computed answer is", etc. In addition, do not print unnecessary spaces unless specified in the program. You just have to print the numbers.Practice Test Cases (3):InputOutput1002 516913542 3
-
-
-        Criteria:
-        [
-    {
-        "id": 237,
-        "description": "Divisibility by odd numbers is checked and number reduced",
-        "is_ai_grading_available": false,
-        "title": "Criterion 2",
-        "program": 60,
-        "Ratings": [
-            {
-                "id": 389,
-                "description": "Totally wrong",
-                "marks": 0.0,
-                "title": "D",
-                "criteria": 237
-            },
-            {
-                "id": 388,
-                "description": "Tried in somewhat right direction",
-                "marks": 1.0,
-                "title": "C",
-                "criteria": 237
-            },
-            {
-                "id": 387,
-                "description": "Almost correct",
-                "marks": 2.0,
-                "title": "B",
-                "criteria": 237
-            },
-            {
-                "id": 386,
-                "description": "Fully correct",
-                "marks": 3.0,
-                "title": "A",
-                "criteria": 237
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "description": "Divisibility by k=2 is checked and number reduced",
-        "is_ai_grading_available": false,
-        "title": "Criterion 1",
-        "program": 60,
-        "Ratings": [
-            {
-                "id": 332,
-                "description": "Totally wrong",
-                "marks": 0.0,
-                "title": "D",
-                "criteria": 6
-            },
-            {
-                "id": 331,
-                "description": "Tried in somewhat right direction",
-                "marks": 1.0,
-                "title": "C",
-                "criteria": 6
-            },
-            {
-                "id": 17,
-                "description": "Almost correct",
-                "marks": 2.0,
-                "title": "B",
-                "criteria": 6
-            },
-            {
-                "id": 16,
-                "description": "Fully correct",
-                "marks": 3.0,
-                "title": "A",
-                "criteria": 6
-            }
-        ]
-    }
-]
-
-        Submission IDs  : ['2410']
-        ===================================================
-        
-        ==================== LOG ENTRY ====================
-        Timestamp       : 2025-06-03 18:30:58
-
-        Problem Statement:
-        4.cpp       (14 Marks)Write a C++ program that accepts an integer N from the user and finds all the prime factors of N.Input Format:The input consists of one value: NOutput Format:Print all the prime factors of N from smallest to largest, each in the same line separated by a space.Constraints (Assume)2 <= N <= 10^6Note: Do not write any C++ statements for printing general messages. For example, the following should NOT be present in your program:cout << "Enter a number:",cout << "The computed answer is", etc. In addition, do not print unnecessary spaces unless specified in the program. You just have to print the numbers.Practice Test Cases (3):InputOutput1002 516913542 3
-
-
-        Criteria:
-        [
-    {
-        "id": 237,
-        "description": "Divisibility by odd numbers is checked and number reduced",
-        "is_ai_grading_available": false,
-        "title": "Criterion 2",
-        "program": 60,
-        "Ratings": [
-            {
-                "id": 389,
-                "description": "Totally wrong",
-                "marks": 0.0,
-                "title": "D",
-                "criteria": 237
-            },
-            {
-                "id": 388,
-                "description": "Tried in somewhat right direction",
-                "marks": 1.0,
-                "title": "C",
-                "criteria": 237
-            },
-            {
-                "id": 387,
-                "description": "Almost correct",
-                "marks": 2.0,
-                "title": "B",
-                "criteria": 237
-            },
-            {
-                "id": 386,
-                "description": "Fully correct",
-                "marks": 3.0,
-                "title": "A",
-                "criteria": 237
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "description": "Divisibility by k=2 is checked and number reduced",
-        "is_ai_grading_available": false,
-        "title": "Criterion 1",
-        "program": 60,
-        "Ratings": [
-            {
-                "id": 332,
-                "description": "Totally wrong",
-                "marks": 0.0,
-                "title": "D",
-                "criteria": 6
-            },
-            {
-                "id": 331,
-                "description": "Tried in somewhat right direction",
-                "marks": 1.0,
-                "title": "C",
-                "criteria": 6
-            },
-            {
-                "id": 17,
-                "description": "Almost correct",
-                "marks": 2.0,
-                "title": "B",
-                "criteria": 6
-            },
-            {
-                "id": 16,
-                "description": "Fully correct",
-                "marks": 3.0,
-                "title": "A",
-                "criteria": 6
-            }
-        ]
-    }
-]
-
-        Submission IDs  : ['2410']
-        ===================================================
-        
-        ==================== LOG ENTRY ====================
-        Timestamp       : 2025-06-04 18:08:14
-
-        Problem Statement:
-        4.cpp       (14 Marks)Write a C++ program that accepts an integer N from the user and finds all the prime factors of N.Input Format:The input consists of one value: NOutput Format:Print all the prime factors of N from smallest to largest, each in the same line separated by a space.Constraints (Assume)2 <= N <= 10^6Note: Do not write any C++ statements for printing general messages. For example, the following should NOT be present in your program:cout << "Enter a number:",cout << "The computed answer is", etc. In addition, do not print unnecessary spaces unless specified in the program. You just have to print the numbers.Practice Test Cases (3):InputOutput1002 516913542 3
-
-
-        Criteria:
-        [
-    {
-        "id": 237,
-        "description": "Divisibility by odd numbers is checked and number reduced",
-        "is_ai_grading_available": false,
-        "title": "Criterion 2",
-        "program": 60,
-        "Ratings": [
-            {
-                "id": 389,
-                "description": "Totally wrong",
-                "marks": 0.0,
-                "title": "D",
-                "criteria": 237
-            },
-            {
-                "id": 388,
-                "description": "Tried in somewhat right direction",
-                "marks": 1.0,
-                "title": "C",
-                "criteria": 237
-            },
-            {
-                "id": 387,
-                "description": "Almost correct",
-                "marks": 2.0,
-                "title": "B",
-                "criteria": 237
-            },
-            {
-                "id": 386,
-                "description": "Fully correct",
-                "marks": 3.0,
-                "title": "A",
-                "criteria": 237
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "description": "Divisibility by k=2 is checked and number reduced",
-        "is_ai_grading_available": false,
-        "title": "Criterion 1",
-        "program": 60,
-        "Ratings": [
-            {
-                "id": 332,
-                "description": "Totally wrong",
-                "marks": 0.0,
-                "title": "D",
-                "criteria": 6
-            },
-            {
-                "id": 331,
-                "description": "Tried in somewhat right direction",
-                "marks": 1.0,
-                "title": "C",
-                "criteria": 6
-            },
-            {
-                "id": 17,
-                "description": "Almost correct",
-                "marks": 2.0,
-                "title": "B",
-                "criteria": 6
-            },
-            {
-                "id": 16,
-                "description": "Fully correct",
-                "marks": 3.0,
-                "title": "A",
-                "criteria": 6
-            }
-        ]
-    }
-]
-
-        Submission IDs  : ['2410']
+        Submission IDs  : ['366', '367', '370', '377', '381', '402', '441', '467', '482', '544', '592', '604', '605', '606', '607', '619', '632']
         ===================================================
         
