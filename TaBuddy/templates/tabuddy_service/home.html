@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{%block pagestyle%}
+
+<style type="text/css">
+  body {
+    background-color: #DADADA;
+  }
+
+  body>.grid {
+    height: 100%;
+  }
+
+  .image {
+    margin-top: -100px;
+  }
+
+  #centerbox {
+    margin-top: 10rem;
+  }
+
+  #accountMain{
+    margin-top: 0rem;
+    padding: 0rem;
+  }
+
+</style>
+
+
+{% endblock %}
+
+
+{% block content %}
+  <div class="ui centered grid" style="padding: 3rem 0;">
+    <div class="eight wide column" id="centerbox">
+      <div class="ui raised padded segment">
+
+        <h2 class="ui orange header" style="margin-bottom: 1.5rem;">
+          <i class="file code icon"></i>
+          <div class="content">Subjective Grading</div>
+        </h2>
+
+        <form class="ui form" method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          
+          <div class="field">
+            <label>Problem Statement</label>
+            {{ form.problem_statement }}
+          </div>
+          
+          <div class="field">
+            <label>Rubric</label>
+            {{ form.rubric }}
+          </div>
+          
+          <div class="field">
+            <label>Student Code Files</label>
+            {{ form.student_codes }}
+            <small>You can select multiple files</small>
+          </div>
+          
+          <button type="submit" class="ui fluid black button" style="margin-top: 1rem;">
+            Submit
+          </button>
+        </form>
+
+        <div class="ui container">
+            {% if messages %}
+                {% for message in messages %}
+                    <p class=" ui {{ message.tags }} message">{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+        </div>
+
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block footer %}
+{# deliberately empty: no footer here #}
+{% endblock %}
+

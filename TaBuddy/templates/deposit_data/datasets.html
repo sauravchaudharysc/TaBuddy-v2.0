@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{%block pagestyle%}
+
+<style type="text/css">
+  body {
+    background-color: #DADADA;
+  }
+
+  body>.grid {
+    height: 100%;
+  }
+
+  .image {
+    margin-top: -100px;
+  }
+
+  #centerbox {
+    margin-top: 10rem;
+  }
+
+  #accountMain{
+    margin-top: 0rem;
+    padding: 0rem;
+  }
+
+</style>
+
+
+{% endblock %}
+
+{% block content %}
+
+<div class="ui container" id="centerbox">
+  <h2 class="ui header">Problem Dashboard</h2>
+
+  <form method="get" action="">
+    <div class="ui form">
+      <div class="field">
+        <label>Select a Problem</label>
+        <select name="problem_id" class="ui dropdown" onchange="this.form.submit()">
+          <option value="">-- Choose a Problem --</option>
+          {% for prob in problems %}
+            <option value="{{ prob.id }}" {% if selected_problem and prob.id == selected_problem.id %}selected{% endif %}>
+              {{ prob.problem_statement|truncatechars:30 }}
+            </option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+  </form>
+
+  {% if selected_problem %}
+    <div class="ui segment">
+    <div class="ui grid">
+        <div class="eight wide column">
+        <h3 style="margin-top: 0;">Problem Details</h3>
+        </div>
+        <div class="eight wide column right aligned">
+        <form method="get" action="{% url 'download_submissions' selected_problem.id %}">
+            <button class="ui button primary">Download All Submissions</button>
+        </form>
+        </div>
+    </div>
+
+    <div class="ui divider"></div>
+
+    <p><strong>Statement:</strong> {{ selected_problem.problem_statement }}</p>
+    <p><strong>Created by:</strong> {{ selected_problem.user_id }}</p>
+    <p><strong>Lab ID:</strong> {{ selected_problem.lab_id }}</p>
+    <p><strong>Problem ID:</strong> {{ selected_problem.id }}</p>
+    <p><strong>Total Submissions:</strong> {{ submission_count }}</p>
+    </div>
+
+
+    <div class="ui segment">
+      <h3>Rubrics Criteria</h3>
+      {% if criteria %}
+        <table class="ui celled table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for c in criteria %}
+              <tr>
+                <td>{{ c.id }}</td>
+                <td>{{ c.title }}</td>
+                <td>{{ c.description }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      {% else %}
+        <p>No criteria found for this problem.</p>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
+{% endblock %}
+
+{% block footer %}
+{# deliberately empty: no footer here #}
+{% endblock %}

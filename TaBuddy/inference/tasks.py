@@ -47,7 +47,7 @@ def query_codellama(self, submissions, problem_statement, criterion_info,
     combined_json = {}
     
     output_file = os.path.join(settings.LOG_DIR,"Inference","gradesfile.txt")
-    with open(output_file, "w") as f:
+    with open(output_file, "a") as f:
         f.write(f'the grades are after the model evaluation: {grades}\n')
     print(f'the grades are after the model evaluation: {grades}')
     for criterion_id, response in grades.items(): 
@@ -61,6 +61,9 @@ def query_codellama(self, submissions, problem_statement, criterion_info,
             
         combined_json[criterion_id] = llm_ratings
     end_time = time.time()
-    print("Total time taken :", end_time - start_time)
+    output_file = os.path.join(settings.LOG_DIR,"Inference","time.txt")
+    # torch.cuda.empty_cache() # Can be done to free up GPU memory
+    with open(output_file, "a") as f:
+        f.write(f'Total time taken : {end_time - start_time} | Start time : {start_time} | End time : {end_time}\n')
+    
     return combined_json
-

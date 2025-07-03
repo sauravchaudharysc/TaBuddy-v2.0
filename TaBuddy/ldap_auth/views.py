@@ -4,11 +4,12 @@ from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST
 from django.views.generic.edit import FormView, View
 import json
-from .forms import UserLoginForm
+from .forms import UserLoginForm, TaskSubmissionForm
 from django.urls import reverse_lazy, reverse
-from django.shortcuts import render, redirect
+from django.shortcuts import get_object_or_404, render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from deposit_data.models import Problem, Submission, Criteria
 
 
 import logging
@@ -60,12 +61,64 @@ class UserLoginView(FormView):
 
 @login_required(login_url=reverse_lazy('login'))
 def login_success(request):
-    return render(request, 'ldap_auth/success.html')
+    if request.user.is_ai_admin :
+        return render(request, 'ldap_auth/success.html')
+    else:
+        return redirect(reverse('submit_task'))
+        # return render(request, 'tabuddy_service/home.html')
 
 @login_required(login_url=reverse_lazy('login'))
 def profile(request):
     return render(request, 'ldap_auth/profile.html')
 
+@login_required(login_url='login')
+def datasets(request):
+    problems = Problem.objects.all()
+    selected_problem = None
+    submission_count = 0
+    criteria = []
+
+    problem_id = request.GET.get("problem_id")
+    if problem_id:
+        selected_problem = get_object_or_404(Problem, id=problem_id)
+        submission_count = Submission.objects.filter(problem=selected_problem).count()
+        criteria = Criteria.objects.filter(problem=selected_problem)
+
+    return render(request, "deposit_data/datasets.html", {
+        "problems": problems,
+        "selected_problem": selected_problem,
+        "submission_count": submission_count,
+        "criteria": criteria
+    })
+
+@login_required(login_url= 'login')
+def download_submissions(request, problem_id):
+    problem = get_object_or_404(Problem, id=problem_id)
+    submissions = Submission.objects.filter(problem=problem)
+
+    buffer = io.BytesIO()
+    with zipfile.ZipFile(buffer, 'w', zipfile.ZIP_DEFLATED) as zip_file:
+        for submission in submissions:
+            folder_name = f"{submission.student_id}/"
+            file_path = f"Submissions_{problem.id}/{folder_name}{submission.filename}"
+            zip_file.writestr(file_path, submission.source_code)
+
+    buffer.seek(0)
+    response = HttpResponse(buffer, content_type='application/zip')
+    response['Content-Disposition'] = f'attachment; filename=Submissions_{problem.id}.zip'
+    return response
+
+@login_required(login_url='login')
+def submit_task(request):
+    if request.method == 'POST':
+        form = TaskSubmissionForm(request.POST, request.FILES)
+        if form.is_valid():
+            # handle your problem_statement, rubric and student_codes here
+            messages.success(request, "Task submitted successfully!")
+            return redirect('submit_task')
+    else:
+        form = TaskSubmissionForm()
+    return render(request, 'tabuddy_service/home.html', {'form': form})
 
 class UserLogoutView(View):
     def post(self, request, *args, **kwargs):

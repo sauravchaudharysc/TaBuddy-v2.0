@@ -3,7 +3,7 @@ from django_auth_ldap.config import LDAPSearch, PosixGroupType
 import os
 
 
-AUTH_USER_MODEL = 'ldap_auth.CustomUser'
+AUTH_USER_MODEL = 'ldap_auth.User'
 AUTH_LDAP_CREATE_USERS = True
 
 # Baseline configuration.

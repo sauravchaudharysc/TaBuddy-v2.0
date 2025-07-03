@@ -26,5 +26,8 @@ urlpatterns = [
     path('profile/', views.profile, name='profile'),
     path('login/', views.ldap_login, name='ldap_login'),
     path('login-check/', csrf_exempt(views.ldap_login_check), name='ldap_login_check'),
+    path('datasets/',views.datasets,name='datasets'),
+    path('inference/', views.submit_task, name='submit_task'),
+    path("problem/<int:problem_id>/download-submissions/", views.download_submissions, name="download_submissions"),
 ]
 

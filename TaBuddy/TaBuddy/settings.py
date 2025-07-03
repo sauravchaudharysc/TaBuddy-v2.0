@@ -80,21 +80,33 @@ WSGI_APPLICATION = 'TaBuddy.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'deposit_data',
+#         'ENFORCE_SCHEMA': False,
+#         'CLIENT': {
+#             'host': 'localhost',
+#             # 'host': 'mongodb', #localhost works for host machine, but inside Docker network, services must use their service names .
+#             'port': 27017,
+#             'username': 'root',
+#             'password': 'example',
+#             'authSource': 'admin'
+#         }
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'deposit_data',
-        'ENFORCE_SCHEMA': False,
-        'CLIENT': {
-            'host': 'localhost',
-            # 'host': 'mongodb', #localhost works for host machine, but inside Docker network, services must use their service names .
-            'port': 27017,
-            'username': 'root',
-            'password': 'example',
-            'authSource': 'admin'
-        }
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'tabuddy_db',
+        'USER': 'postgres',
+        'PASSWORD': 'mysecret',
+        'HOST': 'localhost',
+        'PORT': '6543',
     }
 }
+
 
 CACHES = {
     'default': {
@@ -153,17 +165,17 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CELERY_BROKER_URL = 'redis://redis:6379/0'
-CELERY_RESULT_BACKEND = 'redis://redis:6379/0'
-# CELERY_BROKER_URL = 'redis://localhost:6379/0'
-# CELERY_RESULT_BACKEND = "redis://localhost:6379/0"
+# Celery settings For Production
+# CELERY_BROKER_URL = 'redis://redis:6379/0'
+# CELERY_RESULT_BACKEND = 'redis://redis:6379/0'
+
+# Celery settings for development
+CELERY_BROKER_URL = 'redis://localhost:6379/0'
+CELERY_RESULT_BACKEND = "redis://localhost:6379/0"
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_TIMEZONE ='Asia/Kolkata'
-# "codellama/CodeLlama-7b-Instruct-hf"
-# MODEL_DIRECTORY_PATH = os.getenv("MODEL_DIRECTORY_PATH","/raid/ganesh/nagakalyani/Downloads/CodeLlama-7b-Instruct-hf")
-# ADAPTER_PATH = os.getenv("ADAPTER_PATH", os.path.join(BASE_DIR, "adapters","CodeLlama","final_checkpoint"))
 
 MODEL_DIRECTORY_PATH = os.getenv("MODEL_DIRECTORY_PATH", "/raid/ganesh/nagakalyani/Downloads/CodeLlama-7b-Instruct-hf")
 

@@ -1,4 +1,4 @@
-{% extends 'ldap_auth/base.html' %}
+{% extends 'base.html' %}
 {% block pagestyle %}
 <style type="text/css">
   body {
@@ -28,21 +28,21 @@
       <div style="background:#E9E6DF;color: rgba(0,0,0,.87);" class="ui stacked segment">
         <h2 class="ui text center aligned dividing header">Current Model Status <i id="fetch-status" id="fetch-status" class="sync icon link" title="Fetch latest status" style="font-size: 0.8em; vertical-align: text-top;"></i></h2>
         <div class="field" style="text-align:left">
-          <label>Model Name:</label>
+          <label>Model Name: QWEN</label>
           <div class="field">
             {{ model.name }}
           </div>
         </div>
 
         <div class="field" style="text-align:left">
-          <label>Model Parameters:</label>
+          <label>Model Parameters: 7B</label>
           <div class="field">
             {{ model.parameters }}
           </div>
         </div>
 
         <div class="field" style="text-align:left">
-          <label>Trained On:</label>
+          <label>Trained On: 15/07/2025</label>
           <div class="field">
             {{ model.trained_on }}
           </div>
@@ -54,16 +54,32 @@
       <!-- Retraining Block -->
       <div style="background:#E9E6DF;color: rgba(0,0,0,.87);" class="ui stacked segment">
         <h2 class="ui text center aligned dividing header">Initiate ReTraining</h2>
-        <form method="post" action="#">
-          {% csrf_token %}
-          <button type="submit" class="ui fluid large orange button">
-            Trigger Retraining
-          </button>
-        </form>
+        <button id="retrain-btn" type="button" class="ui fluid large orange button">
+          Trigger Retraining
+        </button>
       </div>
+
+      <script>
+        document.getElementById('retrain-btn').addEventListener('click', () => {
+          fetch('/retrain/', { method: 'GET' })
+            .then(response => response.json())
+            .then(data => {
+              alert(data.message || data.error);
+            })
+            .catch(error => {
+              console.error('Error:', error);
+              alert('An error occurred.');
+            });
+        });
+        </script>
+
 
     </div>
   </div>
 </div>
 
+{% endblock %}
+
+{% block footer %}
+{# deliberately empty: no footer here #}
 {% endblock %}

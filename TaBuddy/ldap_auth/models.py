@@ -1,12 +1,5 @@
-from djongo import models
 from django.contrib.auth.models import AbstractUser
-from bson import ObjectId
+from django.db import models
 
-class CustomUser(AbstractUser):
-    _id = models.ObjectIdField(primary_key=True, default=ObjectId, editable=False)
-
-    # Optional: override default `id` property for compatibility
-    @property
-    def id(self):
-        return str(self._id)
-
+class User(AbstractUser):
+    is_ai_admin = models.BooleanField(default=False)

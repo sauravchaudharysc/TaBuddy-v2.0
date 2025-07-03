@@ -1,0 +1,57 @@
+[
+    {
+        "model": "ldap_auth.user",
+        "pk": 1,
+        "fields": {
+            "last_login": "2023-11-14T16:57:52.771Z",
+            "is_superuser": true,
+            "first_name": "Admin",
+            "last_name": "Admin",
+            "email": "admin@example.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2023-11-14T16:54:16.464Z",
+            "username": "admin",
+            "password": "pbkdf2_sha256$260000$X8G66UQgnjHVX2wx4kHWbO$7xnLqDqx9FLfnnMy/DC6Hv4SNgXx26J3trbcMzUWtSw=",
+            "groups": [],
+            "user_permissions": [],
+            "is_ai_admin": true
+        }
+    },
+    {
+        "model": "ldap_auth.user",
+        "pk": 2,
+        "fields": {
+            "last_login": "2023-11-14T16:57:52.771Z",
+            "is_superuser": false,
+            "first_name": "Student1",
+            "last_name": "Test",
+            "email": "student1@example.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-11-14T16:54:16.464Z",
+            "username": "student1",
+            "password": "pbkdf2_sha256$260000$yOuxR9ctRCFmXTZPyzr4JF$efFbOkKV/rfw23RpCuV/8MxL9BN1rFjwVP8weuE9TZ0=",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "ldap_auth.user",
+        "pk": 3,
+        "fields": {
+            "last_login": "2023-11-14T16:57:52.771Z",
+            "is_superuser": false,
+            "first_name": "Student2",
+            "last_name": "Test",
+            "email": "student2@example.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-11-14T16:54:16.464Z",
+            "username": "student2",
+            "password": "pbkdf2_sha256$260000$Qt7e6hRSQLgY1srfHngCdu$l5zXHz2zkHb1KlIz27Bett4r7DYmZTpcO2KmVb6oYF4=",
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]

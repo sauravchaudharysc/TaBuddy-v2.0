@@ -1,6 +1,6 @@
 from django.urls import path
-from . import views
+from .views import DataPoint
 
-urlpatterns=[
-    path('data-point/', views.DataPoint.as_view(), name='data_point')
+urlpatterns = [
+    path('data-point/', DataPoint.as_view()),
 ]
