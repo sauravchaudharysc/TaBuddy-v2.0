@@ -193,3 +193,8 @@ FLOWER_ENDPOINT = "http://tabuddy_flower:5555"
 CELERY_FLOWER_USER = "admin"
 CELERY_FLOWER_PASSWORD = "secret"
 
+CODELLAMA_PATH = os.getenv("CODELLAMA_PATH", "/raid/ganesh/nagakalyani/Downloads/CodeLlama-7b-Instruct-hf")
+CODESTRAL_PATH = os.getenv("CODESTRAL_PATH", "/raid/ganesh/nagakalyani/Downloads/CodeStral-22b-Instruct-hf")
+MLFLOW_URI = os.getenv("MLFLOW_URI", "http://localhost:5000")
+OUTPUT_DIR = os.getenv("OUTPUT_DIR", os.path.join(BASE_DIR, "retraining/services/Utils/Output"))
+

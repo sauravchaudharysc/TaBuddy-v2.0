@@ -1,23 +1,69 @@
-import sys
-import os
-from django.http import JsonResponse, HttpResponse
-from django.views.decorators.http import require_http_methods
-from django.template import loader
-from TaBuddy.settings import BASE_DIR
+from rest_framework.views import APIView
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from .services.retrain_service import RetrainService
+import subprocess
+import multiprocessing as mp
+mp.set_start_method('spawn', force=True)
 
-from retraining_raw.Utils.dpo_train_tushar import run_training
+class RetrainAPIView(APIView):
+    """
+    POST /retrain/       → kick off a new training job
+    """
+    def post(self, request):
+        service = RetrainService(config=request.data)
+        return service.submit_task()
 
-@require_http_methods(["GET", "POST"])
-def retrain(request):
+    """
+    GET  /retrain/?task_id=XXX  → poll its status/result
+    """
+    def get(self, request):
+        task_id = request.query_params.get("task_id")
+        service = RetrainService()
+        return service.get_status_response(task_id)
+
+@api_view(['GET'])
+def get_gpu_details(request):
+    """
+    GET /gpu-details/ → returns a list of installed GPUs and their memory stats
+    """
     try:
-        run_training(
-            model_name="CodeLLama-7b",
-            device="cuda:0",
-            output_dir="./outputs",
-            train_dataset_path=f"{BASE_DIR}/retraining_raw/Utils/Dataset/train.jsonl",
-            eval_dataset_path=f"{BASE_DIR}/retraining_raw/Utils/Dataset/eval.jsonl",
-            test_dataset_path=f"{BASE_DIR}/retraining_raw/Utils/Dataset/test.jsonl"
+        result = subprocess.run(
+            ['nvidia-smi',
+             '--query-gpu=index,memory.total,memory.free,memory.used',
+             '--format=csv,noheader'],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True
         )
-        return JsonResponse({"message": "Training completed successfully."})
+        if result.returncode != 0:
+            raise RuntimeError(result.stderr.strip())
+
+        lines = result.stdout.strip().splitlines()
+        gpu_details = []
+        for line in lines:
+            gpu_no, total_str, free_str, used_str = [x.strip() for x in line.split(',')]
+            
+            # parse out the numeric MiB values
+            total_val = float(total_str.split()[0])
+            used_val  = float(used_str.split()[0])
+            
+            # compute percent used
+            used_pct = round((used_val / total_val) * 100, 2)
+
+            gpu_details.append({
+                'gpu_no':       int(gpu_no),
+                'total_memory': total_str,
+                'free_memory':  free_str,
+                'used_memory':  used_str,
+                'used_percent': used_pct
+            })
+
+        return Response(gpu_details, status=200)
+
     except Exception as e:
-        return JsonResponse({"error": str(e)}, status=500)
+        return Response(
+            {"error": str(e)},
+            status=500
+        )
+

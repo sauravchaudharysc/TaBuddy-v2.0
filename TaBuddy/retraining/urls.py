@@ -1,6 +1,7 @@
-from django.urls import path, include
-from . import views
+from django.urls import path
+from retraining.views import *
 
 urlpatterns = [
-   path('retrain/', views.retrain, name='retrain'),
+   path('retrain/', RetrainAPIView.as_view(), name='retrain'),
+   path('gpu-details/', get_gpu_details, name='gpu-details'),
 ]
